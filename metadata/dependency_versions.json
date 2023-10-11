@@ -1,0 +1,11 @@
+{
+  "antismash": "7.0.0",
+  "bigslice": "c0085de",
+  "cblaster": "1.3.12",
+  "prokka": "1.14.6",
+  "eggnog-mapper": "2.1.6",
+  "roary": "3.13.0",
+  "seqfu": "1.15.3",
+  "checkm": "1.1.3",
+  "gtdbtk": "2.3.0"
+}

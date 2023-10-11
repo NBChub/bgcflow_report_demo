@@ -8,13 +8,22 @@ markdown_extensions:
 - attr_list
 nav:
 - Home: index.md
-- seqfu: seqfu.md
-- mash: mash.md
-- fastani: fastani.md
-- antismash: antismash.md
-- bigscape: bigscape.md
-- bigslice: bigslice.md
-- automlst-wrapper: automlst-wrapper.md
+- QC and Data Selection:
+  - seqfu: seqfu.md
+  - mash: mash.md
+  - fastani: fastani.md
+- Functional Annotation:
+  - prokka-gbk: prokka-gbk.md
+- Genome Mining:
+  - antismash: antismash.md
+  - query-bigslice: query-bigslice.md
+  - bigscape: bigscape.md
+  - bigslice: bigslice.md
+  - arts: arts.md
+  - cblaster-genome: cblaster-genome.md
+  - cblaster-bgc: cblaster-bgc.md
+- Phylogenomic Placement:
+  - automlst-wrapper: automlst-wrapper.md
 plugins:
 - search
 - mkdocs-jupyter:
