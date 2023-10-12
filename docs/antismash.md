@@ -17,28 +17,28 @@ AntiSMASH detected **735** BGCs from **26** genomes with the median of **25**. O
 
 
 <style>
-  #altair-viz-ecb0d8b2471e4f948b21da9a989c60ed.vega-embed {
+  #altair-viz-7e0fd7281fd7454d8423edd788695491.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-ecb0d8b2471e4f948b21da9a989c60ed.vega-embed details,
-  #altair-viz-ecb0d8b2471e4f948b21da9a989c60ed.vega-embed details summary {
+  #altair-viz-7e0fd7281fd7454d8423edd788695491.vega-embed details,
+  #altair-viz-7e0fd7281fd7454d8423edd788695491.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-ecb0d8b2471e4f948b21da9a989c60ed"></div>
+<div id="altair-viz-7e0fd7281fd7454d8423edd788695491"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-ecb0d8b2471e4f948b21da9a989c60ed") {
-      outputDiv = document.getElementById("altair-viz-ecb0d8b2471e4f948b21da9a989c60ed");
+    if (outputDiv.id !== "altair-viz-7e0fd7281fd7454d8423edd788695491") {
+      outputDiv = document.getElementById("altair-viz-7e0fd7281fd7454d8423edd788695491");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
       "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.15.1?noext",
       "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
     };
 
@@ -74,12 +74,12 @@ AntiSMASH detected **735** BGCs from **26** genomes with the median of **25**. O
       require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
     } else {
       maybeLoadScript("vega", "5")
-        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-lite", "5.15.1"))
         .then(() => maybeLoadScript("vega-embed", "6"))
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-3f1ca1750db15a411338364e5677a133"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "GTDB genus", "type": "nominal"}, "tooltip": [{"field": "Genome ID", "type": "nominal"}, {"field": "GTDB species", "type": "nominal"}, {"field": "BGCs", "type": "quantitative"}, {"field": "Incomplete BGCs", "type": "quantitative"}], "x": {"axis": {"title": "BGCs"}, "bin": true, "field": "BGCs", "type": "quantitative"}, "y": {"aggregate": "count", "axis": {"title": "Genomes"}, "type": "quantitative"}}, "params": [{"name": "param_1", "select": {"type": "interval", "encodings": ["x", "y"]}, "bind": "scales"}], "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-3f1ca1750db15a411338364e5677a133": [{"Genome ID": "GCF_003635025.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora antimicrobica", "Strain": null, "BGCs": 26.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_900114905.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora antimicrobica", "Strain": null, "BGCs": 25.0, "Incomplete BGCs": 7.0}, {"Genome ID": "GCF_007829955.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora dendranthemae", "Strain": null, "BGCs": 22.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_018070075.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora endophytica", "Strain": null, "BGCs": 26.0, "Incomplete BGCs": 7.0}, {"Genome ID": "GCF_016859185.1", "GTDB genus": "Saccharopolyspora_D", "GTDB species": "Saccharopolyspora_D erythraea", "Strain": null, "BGCs": 39.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_018141105.1", "GTDB genus": "Saccharopolyspora_D", "GTDB species": "Saccharopolyspora_D erythraea_A", "Strain": null, "BGCs": 36.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_022392385.1", "GTDB genus": "Saccharopolyspora_D", "GTDB species": "Saccharopolyspora_D erythraea", "Strain": null, "BGCs": 38.0, "Incomplete BGCs": 1.0}, {"Genome ID": "GCF_000062885.1", "GTDB genus": "Saccharopolyspora_D", "GTDB species": "Saccharopolyspora_D erythraea", "Strain": null, "BGCs": 38.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_002564065.1", "GTDB genus": "Saccharopolyspora_D", "GTDB species": "Saccharopolyspora_D erythraea", "Strain": null, "BGCs": 37.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_900116135.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora flava", "Strain": null, "BGCs": 19.0, "Incomplete BGCs": 4.0}, {"Genome ID": "GCF_014203325.1", "GTDB genus": "Saccharopolyspora_C", "GTDB species": "Saccharopolyspora_C gloriosae", "Strain": null, "BGCs": 24.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_022828475.1", "GTDB genus": "Saccharopolyspora_C", "GTDB species": "Saccharopolyspora_C sp.", "Strain": null, "BGCs": 25.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_024734405.1", "GTDB genus": "Saccharopolyspora_C", "GTDB species": "Saccharopolyspora_C sp.", "Strain": null, "BGCs": 24.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_008630535.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora hirsuta", "Strain": null, "BGCs": 22.0, "Incomplete BGCs": 7.0}, {"Genome ID": "GCF_013410345.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora hordei", "Strain": null, "BGCs": 13.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_900112555.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora jiangxiensis", "Strain": null, "BGCs": 23.0, "Incomplete BGCs": 4.0}, {"Genome ID": "GCF_900108315.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora jiangxiensis", "Strain": null, "BGCs": 24.0, "Incomplete BGCs": 1.0}, {"Genome ID": "GCF_014203395.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora phatthalungensis", "Strain": null, "BGCs": 37.0, "Incomplete BGCs": 1.0}, {"Genome ID": "GCF_014697215.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora pogona", "Strain": null, "BGCs": 38.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_003931915.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora rhizosphaerae", "Strain": null, "BGCs": 14.0, "Incomplete BGCs": 2.0}, {"Genome ID": "GCF_025643595.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora sp.", "Strain": null, "BGCs": 17.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_012277335.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora pogona", "Strain": null, "BGCs": 33.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_016526145.1", "GTDB genus": "Saccharopolyspora_C", "GTDB species": "Saccharopolyspora_C sp016526145", "Strain": null, "BGCs": 25.0, "Incomplete BGCs": 7.0}, {"Genome ID": "GCF_014490055.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora spinosa", "Strain": null, "BGCs": 37.0, "Incomplete BGCs": 1.0}, {"Genome ID": "GCF_002846475.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora spinosa", "Strain": null, "BGCs": 37.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_000194155.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora spinosa", "Strain": null, "BGCs": 36.0, "Incomplete BGCs": 2.0}]}}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-3f1ca1750db15a411338364e5677a133"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "GTDB genus", "type": "nominal"}, "tooltip": [{"field": "Genome ID", "type": "nominal"}, {"field": "GTDB species", "type": "nominal"}, {"field": "BGCs", "type": "quantitative"}, {"field": "Incomplete BGCs", "type": "quantitative"}], "x": {"axis": {"title": "BGCs"}, "bin": true, "field": "BGCs", "type": "quantitative"}, "y": {"aggregate": "count", "axis": {"title": "Genomes"}, "type": "quantitative"}}, "params": [{"name": "param_1", "select": {"type": "interval", "encodings": ["x", "y"]}, "bind": "scales"}], "$schema": "https://vega.github.io/schema/vega-lite/v5.15.1.json", "datasets": {"data-3f1ca1750db15a411338364e5677a133": [{"Genome ID": "GCF_003635025.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora antimicrobica", "Strain": null, "BGCs": 26.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_900114905.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora antimicrobica", "Strain": null, "BGCs": 25.0, "Incomplete BGCs": 7.0}, {"Genome ID": "GCF_007829955.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora dendranthemae", "Strain": null, "BGCs": 22.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_018070075.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora endophytica", "Strain": null, "BGCs": 26.0, "Incomplete BGCs": 7.0}, {"Genome ID": "GCF_016859185.1", "GTDB genus": "Saccharopolyspora_D", "GTDB species": "Saccharopolyspora_D erythraea", "Strain": null, "BGCs": 39.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_018141105.1", "GTDB genus": "Saccharopolyspora_D", "GTDB species": "Saccharopolyspora_D erythraea_A", "Strain": null, "BGCs": 36.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_022392385.1", "GTDB genus": "Saccharopolyspora_D", "GTDB species": "Saccharopolyspora_D erythraea", "Strain": null, "BGCs": 38.0, "Incomplete BGCs": 1.0}, {"Genome ID": "GCF_000062885.1", "GTDB genus": "Saccharopolyspora_D", "GTDB species": "Saccharopolyspora_D erythraea", "Strain": null, "BGCs": 38.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_002564065.1", "GTDB genus": "Saccharopolyspora_D", "GTDB species": "Saccharopolyspora_D erythraea", "Strain": null, "BGCs": 37.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_900116135.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora flava", "Strain": null, "BGCs": 19.0, "Incomplete BGCs": 4.0}, {"Genome ID": "GCF_014203325.1", "GTDB genus": "Saccharopolyspora_C", "GTDB species": "Saccharopolyspora_C gloriosae", "Strain": null, "BGCs": 24.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_022828475.1", "GTDB genus": "Saccharopolyspora_C", "GTDB species": "Saccharopolyspora_C sp.", "Strain": null, "BGCs": 25.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_024734405.1", "GTDB genus": "Saccharopolyspora_C", "GTDB species": "Saccharopolyspora_C sp.", "Strain": null, "BGCs": 24.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_008630535.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora hirsuta", "Strain": null, "BGCs": 22.0, "Incomplete BGCs": 7.0}, {"Genome ID": "GCF_013410345.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora hordei", "Strain": null, "BGCs": 13.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_900112555.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora jiangxiensis", "Strain": null, "BGCs": 23.0, "Incomplete BGCs": 4.0}, {"Genome ID": "GCF_900108315.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora jiangxiensis", "Strain": null, "BGCs": 24.0, "Incomplete BGCs": 1.0}, {"Genome ID": "GCF_014203395.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora phatthalungensis", "Strain": null, "BGCs": 37.0, "Incomplete BGCs": 1.0}, {"Genome ID": "GCF_014697215.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora pogona", "Strain": null, "BGCs": 38.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_003931915.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora rhizosphaerae", "Strain": null, "BGCs": 14.0, "Incomplete BGCs": 2.0}, {"Genome ID": "GCF_025643595.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora sp.", "Strain": null, "BGCs": 17.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_012277335.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora pogona", "Strain": null, "BGCs": 33.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_016526145.1", "GTDB genus": "Saccharopolyspora_C", "GTDB species": "Saccharopolyspora_C sp016526145", "Strain": null, "BGCs": 25.0, "Incomplete BGCs": 7.0}, {"Genome ID": "GCF_014490055.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora spinosa", "Strain": null, "BGCs": 37.0, "Incomplete BGCs": 1.0}, {"Genome ID": "GCF_002846475.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora spinosa", "Strain": null, "BGCs": 37.0, "Incomplete BGCs": 0.0}, {"Genome ID": "GCF_000194155.1", "GTDB genus": "Saccharopolyspora", "GTDB species": "Saccharopolyspora spinosa", "Strain": null, "BGCs": 36.0, "Incomplete BGCs": 2.0}]}}, {"mode": "vega-lite"});
 </script>
 
 
@@ -95,7 +95,7 @@ Click on the genome ids to get the antiSMASH result.
 .itables table th { font-style: oblique; font-size: .8em; }
 </style>
 <div class="itables">
-<table id="7a382988-7e79-4dc3-a5ff-59d0f5e88698" class="display compact"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+<table id="d1cd132c-ded5-4291-a401-a7afe9961345" class="display compact"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
     <tr style="text-align: right;">
 
       <th>Genome ID</th>
@@ -122,7 +122,7 @@ Click on the genome ids to get the antiSMASH result.
 
     $(document).ready(function () {
 
-        $('#7a382988-7e79-4dc3-a5ff-59d0f5e88698').DataTable(dt_args);
+        $('#d1cd132c-ded5-4291-a401-a7afe9961345').DataTable(dt_args);
     });
 </script>
 </div>
