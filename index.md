@@ -9,25 +9,24 @@ Summary report for project `{{ project().name }}`. Generated using [**`BGCFlow v
 
 
 ## Available reports
-| BGCFlow_rules                                       | description                                                                                      |
-|:----------------------------------------------------|:-------------------------------------------------------------------------------------------------|
-| [seqfu](seqfu/){.md-button}                         | Calculate sequence statistics using SeqFu.                                                       |
-| [mash](mash/){.md-button}                           | Calculate distance estimation for all samples using MinHash.                                     |
-| [fastani](fastani/){.md-button}                     | Do pairwise Average Nucleotide Identity (ANI) calculation across all samples.                    |
-| [checkm](checkm/){.md-button}                       | Assess genome quality with CheckM.                                                               |
-| [prokka-gbk](prokka-gbk/){.md-button}               | Copy annotated genbank results.                                                                  |
-| [antismash](antismash/){.md-button}                 | Summarizes antiSMASH result.                                                                     |
-| [query-bigslice](query-bigslice/){.md-button}       | Map BGCs to BiG-FAM database (https://bigfam.bioinformatics.nl/)                                 |
-| [bigscape](bigscape/){.md-button}                   | Cluster BGCs using BiG-SCAPE                                                                     |
-| [bigslice](bigslice/){.md-button}                   | Cluster BGCs using BiG-SLiCE (https://github.com/medema-group/bigslice)                          |
-| [automlst-wrapper](automlst-wrapper/){.md-button}   | Simplified Tree building using [autoMLST](https://github.com/NBChub/automlst-simplified-wrapper) |
-| [arts](arts/){.md-button}                           | Run Antibiotic Resistant Target Seeker (ARTS) on samples.                                        |
-| [roary](roary/){.md-button}                         | Build pangenome using Roary.                                                                     |
-| [eggnog-roary](eggnog-roary/){.md-button}           | Annotate Roary output using eggNOG mapper                                                        |
-| [deeptfactor](deeptfactor/){.md-button}             | Use deep learning to find Transcription Factors.                                                 |
-| [deeptfactor-roary](deeptfactor-roary/){.md-button} | Use DeepTFactor on Roary outputs.                                                                |
-| [cblaster-genome](cblaster-genome/){.md-button}     | Build diamond database of genomes for cblaster search.                                           |
-| [cblaster-bgc](cblaster-bgc/){.md-button}           | Build diamond database of BGCs for cblaster search.                                              |
+| BGCFlow_rules                                     | description                                                                                      |
+|:--------------------------------------------------|:-------------------------------------------------------------------------------------------------|
+| [seqfu](seqfu/){.md-button}                       | Calculate sequence statistics using SeqFu.                                                       |
+| [mash](mash/){.md-button}                         | Calculate distance estimation for all samples using MinHash.                                     |
+| [fastani](fastani/){.md-button}                   | Do pairwise Average Nucleotide Identity (ANI) calculation across all samples.                    |
+| [checkm](checkm/){.md-button}                     | Assess genome quality with CheckM.                                                               |
+| [prokka-gbk](prokka-gbk/){.md-button}             | Copy annotated genbank results.                                                                  |
+| [antismash](antismash/){.md-button}               | Summarizes antiSMASH result.                                                                     |
+| [query-bigslice](query-bigslice/){.md-button}     | Map BGCs to BiG-FAM database (https://bigfam.bioinformatics.nl/)                                 |
+| [bigscape](bigscape/){.md-button}                 | Cluster BGCs using BiG-SCAPE                                                                     |
+| [bigslice](bigslice/){.md-button}                 | Cluster BGCs using BiG-SLiCE (https://github.com/medema-group/bigslice)                          |
+| [automlst-wrapper](automlst-wrapper/){.md-button} | Simplified Tree building using [autoMLST](https://github.com/NBChub/automlst-simplified-wrapper) |
+| [arts](arts/){.md-button}                         | Run Antibiotic Resistant Target Seeker (ARTS) on samples.                                        |
+| [roary](roary/){.md-button}                       | Build pangenome using Roary.                                                                     |
+| [eggnog-roary](eggnog-roary/){.md-button}         | Annotate Roary output using eggNOG mapper                                                        |
+| [deeptfactor](deeptfactor/){.md-button}           | Use deep learning to find Transcription Factors.                                                 |
+| [cblaster-genome](cblaster-genome/){.md-button}   | Build diamond database of genomes for cblaster search.                                           |
+| [cblaster-bgc](cblaster-bgc/){.md-button}         | Build diamond database of BGCs for cblaster search.                                              |
 
 
 ## References
