@@ -12,8 +12,10 @@ nav:
   - seqfu: seqfu.md
   - mash: mash.md
   - fastani: fastani.md
+  - checkm: checkm.md
 - Functional Annotation:
   - prokka-gbk: prokka-gbk.md
+  - deeptfactor: deeptfactor.md
 - Genome Mining:
   - antismash: antismash.md
   - query-bigslice: query-bigslice.md
@@ -24,6 +26,9 @@ nav:
   - cblaster-bgc: cblaster-bgc.md
 - Phylogenomic Placement:
   - automlst-wrapper: automlst-wrapper.md
+- Comparative Genomics:
+  - roary: roary.md
+  - eggnog-roary: eggnog-roary.md
 plugins:
 - search
 - mkdocs-jupyter:
@@ -51,3 +56,5 @@ theme:
     toggle:
       icon: material/toggle-switch-off-outline
       name: Switch to light mode
+#extra_css:
+#  - stylesheets/extra.css

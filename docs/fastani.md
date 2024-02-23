@@ -14,7 +14,7 @@ Fast Whole-Genome Similarity (ANI) Estimation
 
 ## Estimate Number of Clusters
 
-    Estimated number of clusters: 7
+    Estimated number of clusters: 8
 
 
 

@@ -14,14 +14,14 @@ Steps:
 - Install the conda environment:
 
 ```bash
-    conda install -f /data/a/matinnu/Saccharopolyspora/data/processed/mq_saccharopolyspora/docs/assets/envs/bigslice.yaml
+    conda install -f /data/matinnu/bgcflow_v0.8.2/data/processed/mq_saccharopolyspora/docs/assets/envs/bigslice.yaml
 ```
 
 - Run the app
 
 ```bash
     port='5001'
-    conda run -n bigslice bash /data/a/matinnu/Saccharopolyspora/data/processed/mq_saccharopolyspora/cluster_as_7.0.0/start_server.sh $port
+    conda run -n bigslice bash /data/matinnu/bgcflow_v0.8.2/data/processed/mq_saccharopolyspora/cluster_as_7.0.0/start_server.sh $port
 ```
 
 
