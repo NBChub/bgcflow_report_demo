@@ -11,23 +11,23 @@ Summary of [Seqfu](https://github.com/telatin/seqfu2) results from project: `[{{
 
 
 <style>
-  #altair-viz-4bc05f01ae02452b873d4c021822b146.vega-embed {
+  #altair-viz-e44c76e22eb2465aa3fbf46fdaf594ac.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-4bc05f01ae02452b873d4c021822b146.vega-embed details,
-  #altair-viz-4bc05f01ae02452b873d4c021822b146.vega-embed details summary {
+  #altair-viz-e44c76e22eb2465aa3fbf46fdaf594ac.vega-embed details,
+  #altair-viz-e44c76e22eb2465aa3fbf46fdaf594ac.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-4bc05f01ae02452b873d4c021822b146"></div>
+<div id="altair-viz-e44c76e22eb2465aa3fbf46fdaf594ac"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-4bc05f01ae02452b873d4c021822b146") {
-      outputDiv = document.getElementById("altair-viz-4bc05f01ae02452b873d4c021822b146");
+    if (outputDiv.id !== "altair-viz-e44c76e22eb2465aa3fbf46fdaf594ac") {
+      outputDiv = document.getElementById("altair-viz-e44c76e22eb2465aa3fbf46fdaf594ac");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
