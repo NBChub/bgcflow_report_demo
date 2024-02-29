@@ -14,23 +14,23 @@ Assess the quality of microbial genomes recovered from isolates, single cells, a
 
 
 <style>
-  #altair-viz-c4f6e3ec2c6f483da814e6f3daab582a.vega-embed {
+  #altair-viz-1816219a83f04eb58891b933c7620dd2.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-c4f6e3ec2c6f483da814e6f3daab582a.vega-embed details,
-  #altair-viz-c4f6e3ec2c6f483da814e6f3daab582a.vega-embed details summary {
+  #altair-viz-1816219a83f04eb58891b933c7620dd2.vega-embed details,
+  #altair-viz-1816219a83f04eb58891b933c7620dd2.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-c4f6e3ec2c6f483da814e6f3daab582a"></div>
+<div id="altair-viz-1816219a83f04eb58891b933c7620dd2"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c4f6e3ec2c6f483da814e6f3daab582a") {
-      outputDiv = document.getElementById("altair-viz-c4f6e3ec2c6f483da814e6f3daab582a");
+    if (outputDiv.id !== "altair-viz-1816219a83f04eb58891b933c7620dd2") {
+      outputDiv = document.getElementById("altair-viz-1816219a83f04eb58891b933c7620dd2");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
