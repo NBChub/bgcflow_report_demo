@@ -13,7 +13,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1425.2,
         1530.7
@@ -194,7 +194,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1412.1,
         1563.2
@@ -295,7 +295,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1412.9,
         1574.2
@@ -460,7 +460,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1511.7,
         1635.4
@@ -948,7 +948,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1449.2,
         1266.0
@@ -986,7 +986,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1465.1,
         1434.6
@@ -1003,7 +1003,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1537.4,
         1268.7
@@ -1075,7 +1075,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1426.6,
         1496.2
@@ -1092,7 +1092,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1414.3,
         1511.8
@@ -1109,7 +1109,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         907.69,
         1852.1
@@ -1481,7 +1481,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1452.6,
         1475.3
@@ -1786,7 +1786,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         2335.2,
         1628.1
@@ -1862,7 +1862,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1537.1,
         1573.5
@@ -1879,7 +1879,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1433.2,
         1583.0
@@ -2006,7 +2006,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         2439.4,
         1586.0
@@ -2599,7 +2599,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1718.9,
         1624.6
@@ -2616,7 +2616,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1686.7,
         1677.5
@@ -2633,7 +2633,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1721.6,
         1599.6
@@ -2650,7 +2650,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1706.2,
         1643.5
@@ -2667,7 +2667,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1704.7,
         1665.6
@@ -3027,7 +3027,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         2376.6,
         1732.0
@@ -3044,7 +3044,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         2481.1,
         1690.9
@@ -3116,7 +3116,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1427.7,
         1460.1
@@ -3239,7 +3239,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         479.15,
         1903.5
@@ -3413,7 +3413,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1470.2,
         1471.8
@@ -3430,7 +3430,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1494.1,
         1471.8
@@ -4291,7 +4291,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1011.9,
         1810.0
@@ -4405,7 +4405,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1924.7,
         1042.0
@@ -4439,7 +4439,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1832.3,
         1058.2
@@ -4511,7 +4511,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1904.1,
         1196.6
@@ -4841,7 +4841,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         949.18,
         1956.0
@@ -5167,7 +5167,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         2304.6,
         2754.4
@@ -5205,7 +5205,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         2398.9,
         2738.0
@@ -5222,7 +5222,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         2375.9,
         2891.1
@@ -5239,7 +5239,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         2443.3,
         2823.2
@@ -5273,7 +5273,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         2291.0,
         2848.5
@@ -5612,7 +5612,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         589.27,
         156.64
@@ -5650,7 +5650,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         2242.8,
         834.39
@@ -5688,7 +5688,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         2337.1,
         818.0
@@ -5705,7 +5705,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         2314.2,
         971.08
@@ -5722,7 +5722,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         2381.5,
         903.21
@@ -5739,7 +5739,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         2229.2,
         928.5
@@ -5756,7 +5756,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         2572.7,
         124.64
@@ -5849,7 +5849,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         3149.3,
         636.64
@@ -5887,7 +5887,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         957.63,
         2554.9
@@ -5904,7 +5904,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         338.96,
         837.8
@@ -5942,7 +5942,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         461.27,
         786.0
@@ -5959,7 +5959,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         444.67,
         918.18
@@ -5993,7 +5993,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         1053.6,
         1914.9
@@ -6116,7 +6116,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         2155.7,
         293.8
@@ -6154,7 +6154,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         2278.0,
         242.0
@@ -6264,7 +6264,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         2261.4,
         374.18
@@ -6815,7 +6815,7 @@
       "most_similar_known_cluster_id": "BGC0001534",
       "most_similar_known_cluster_description": "branched-chain fatty acids",
       "most_similar_known_cluster_type": "Other",
-      "similarity": 1.25,
+      "similarity": 1.0,
       "pos": [
         940.74,
         92.639
@@ -7633,7 +7633,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         3091.0,
         1957.8
@@ -7688,7 +7688,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         3213.3,
         1906.0
@@ -7705,7 +7705,7 @@
       "most_similar_known_cluster_id": null,
       "most_similar_known_cluster_description": null,
       "most_similar_known_cluster_type": null,
-      "similarity": null,
+      "similarity": 0.0,
       "pos": [
         3196.7,
         2038.2
@@ -9026,7 +9026,7 @@
       "most_similar_known_cluster_id": "BGC0000148",
       "most_similar_known_cluster_description": "A83543A",
       "most_similar_known_cluster_type": "Polyketide",
-      "similarity": 1.2608695652173914,
+      "similarity": 1.0,
       "pos": [
         146.96,
         476.64
