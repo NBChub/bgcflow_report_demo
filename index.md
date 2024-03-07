@@ -27,6 +27,7 @@ Summary report for project `{{ project().name }}`. Generated using [**`BGCFlow v
 | [deeptfactor](deeptfactor/){.md-button}           | Use deep learning to find Transcription Factors.                                                 |
 | [cblaster-genome](cblaster-genome/){.md-button}   | Build diamond database of genomes for cblaster search.                                           |
 | [cblaster-bgc](cblaster-bgc/){.md-button}         | Build diamond database of BGCs for cblaster search.                                              |
+| [gecco](gecco/){.md-button}                       | GEne Cluster prediction with COnditional random fields.                                          |
 
 
 ## References
