@@ -16,3 +16,5 @@ roary/
 site/
 tables/
 __pycache__/
+gecco/
+eggnog_roary/
