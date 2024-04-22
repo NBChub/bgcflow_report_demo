@@ -5,7 +5,10 @@ extra:
   - icon: fontawesome/brands/github
     link: https://github.com/NBChub/bgcflow
 markdown_extensions:
-- attr_list
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 nav:
 - Home: index.md
 - QC and Data Selection:
@@ -24,11 +27,14 @@ nav:
   - arts: arts.md
   - cblaster-genome: cblaster-genome.md
   - cblaster-bgc: cblaster-bgc.md
+  - gecco: gecco.md
 - Phylogenomic Placement:
   - automlst-wrapper: automlst-wrapper.md
 - Comparative Genomics:
   - roary: roary.md
   - eggnog-roary: eggnog-roary.md
+- Custom Reports:
+  - How to Add Custom Analysis to the BGCFlow Report: custom_tutorial.md
 plugins:
 - search
 - mkdocs-jupyter:
@@ -56,5 +62,7 @@ theme:
     toggle:
       icon: material/toggle-switch-off-outline
       name: Switch to light mode
-#extra_css:
-#  - stylesheets/extra.css
+  icon:
+    admonition:
+      note: octicons/tag-16
+      code: material/code-tags
