@@ -19,3 +19,4 @@ __pycache__/
 gecco/
 eggnog_roary/
 bgcflow_wrapper.log
+dbt/
