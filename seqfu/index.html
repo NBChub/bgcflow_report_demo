@@ -1,0 +1,1231 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../mash/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
+    
+    
+      
+        <title>seqfu - BGCFlow Report</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#seqfu2" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="BGCFlow Report" class="md-header__button md-logo" aria-label="BGCFlow Report" data-md-component="logo">
+      
+  <img src="../assets/bgcflow/BGCFlow_logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BGCFlow Report
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              seqfu
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  QC and Data Selection
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../prokka-gbk/" class="md-tabs__link">
+          
+  
+  Functional Annotation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../antismash/" class="md-tabs__link">
+          
+  
+  Genome Mining
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../automlst-wrapper/" class="md-tabs__link">
+          
+  
+  Phylogenomic Placement
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../roary/" class="md-tabs__link">
+          
+  
+  Comparative Genomics
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="BGCFlow Report" class="md-nav__button md-logo" aria-label="BGCFlow Report" data-md-component="logo">
+      
+  <img src="../assets/bgcflow/BGCFlow_logo.svg" alt="logo">
+
+    </a>
+    BGCFlow Report
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    QC and Data Selection
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            QC and Data Selection
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    seqfu
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    seqfu
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#genome-statistics-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Genome Statistics Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    mash
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fastani/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    fastani
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checkm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    checkm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Functional Annotation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Functional Annotation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prokka-gbk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    prokka-gbk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deeptfactor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    deeptfactor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Genome Mining
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Genome Mining
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../antismash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    antismash
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../query-bigslice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    query-bigslice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bigscape/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    bigscape
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bigslice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    bigslice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    arts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cblaster-genome/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    cblaster-genome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cblaster-bgc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    cblaster-bgc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gecco/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    gecco
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Phylogenomic Placement
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Phylogenomic Placement
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automlst-wrapper/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    automlst-wrapper
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Comparative Genomics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Comparative Genomics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    roary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eggnog-roary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    eggnog-roary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+
+
+
+                  
+
+
+<h1 id="seqfu2">SeqFu2</h1>
+<p>Summary of <a href="https://github.com/telatin/seqfu2">Seqfu</a> results from project: <code>[mq_saccharopolyspora]</code> </p>
+<h2 id="description">Description</h2>
+<p><a href="https://github.com/telatin/seqfu2">Seqfu2</a> provides a sequence statistic overview of the genomes in the dataset.</p>
+<h2 id="genome-statistics-overview">Genome Statistics Overview</h2>
+<style>
+  #altair-viz-7f3e156d7c6c45e7828c68595f69e4f0.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-7f3e156d7c6c45e7828c68595f69e4f0.vega-embed details,
+  #altair-viz-7f3e156d7c6c45e7828c68595f69e4f0.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-7f3e156d7c6c45e7828c68595f69e4f0"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-7f3e156d7c6c45e7828c68595f69e4f0") {
+      outputDiv = document.getElementById("altair-viz-7f3e156d7c6c45e7828c68595f69e4f0");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.16.3?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.16.3"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}, "title": {"anchor": "middle", "fontSize": 20, "offset": 10, "orient": "top"}}, "data": {"name": "data-54ccd7b48efac78c84b67e354c5c9efd"}, "mark": {"type": "circle", "size": 150}, "encoding": {"color": {"field": "Total", "scale": {"domain": [5783988.0, 9608180.0], "range": ["blue", "red"]}, "type": "quantitative"}, "tooltip": [{"field": "genome_id", "type": "nominal"}, {"field": "Count", "type": "quantitative"}, {"field": "Total", "type": "quantitative"}, {"field": "gc", "type": "quantitative"}, {"field": "N50", "type": "quantitative"}, {"field": "N75", "type": "quantitative"}, {"field": "N90", "type": "quantitative"}, {"field": "AuN", "type": "quantitative"}, {"field": "Min", "type": "quantitative"}, {"field": "Max", "type": "quantitative"}, {"field": "Organism", "type": "nominal"}], "x": {"axis": {"format": ".2%"}, "field": "gc", "scale": {"zero": false}, "title": "GC (%)", "type": "quantitative"}, "y": {"field": "N50", "scale": {"zero": false}, "type": "quantitative"}}, "height": 500, "params": [{"name": "param_1", "select": {"type": "interval", "encodings": ["x", "y"]}, "bind": "scales"}], "title": "Genome QC Statistics", "width": 500, "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json", "datasets": {"data-54ccd7b48efac78c84b67e354c5c9efd": [{"genome_id": "GCF_003635025.1", "Min": 140452, "N25": 8125734, "N50": 8125734, "AuN": 7990054.881787078, "gc": 0.7038623374794615, "Max": 8125734, "N75": 8125734, "Count": 2, "Total": 8266186, "N90": 8125734, "Avg": 4133093.0, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora", "Species": "antimicrobica", "Organism": "s__Saccharopolyspora antimicrobica", "accession": "GCA_003635025.1", "name": "GCF_003635025.1", "trna_aa_count": 19.0, "contig_count": 2.0, "n50_contigs": 8125734.0, "longest_contig": 8125734.0, "scaffold_count": 2.0, "n50_scaffolds": 8125734.0, "longest_scaffold": 8125734.0, "genome_size": 8266186.0, "gc_percentage": 70.38623374794615, "ambiguous_bases": 0.0, "checkm_completeness": 100.0, "checkm_contamination": 3.19, "checkm_strain_heterogeneity": 7.69, "lsu_5s_count": 5.0, "ssu_count": 5.0, "lsu_23s_count": 6.0, "protein_count": 7658.0, "coding_density": 87.51350380937473, "ncbi_genbank_assembly_accession": "GCA_003635025.1", "ncbi_strain_identifiers": "DSM 45119", "ncbi_assembly_level": "Contig", "ncbi_assembly_name": "ASM363502v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN04490245", "ncbi_country": null, "ncbi_date": "2018-10-11", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": 0.0, "ncbi_cds_count": 7653.0, "ncbi_refseq_category": "representative genome", "ncbi_seq_rel_date": "2018/10/11", "ncbi_spanned_gaps": 0.0, "ncbi_species_taxid": 455193.0, "ncbi_ssu_count": 5.0, "ncbi_submitter": "DOE Joint Genome Institute", "ncbi_taxid": 455193.0, "ncbi_total_gap_length": 0.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 54.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": "RBXX00000000.1", "gtdbTypeDesignation": "type strain of species", "gtdbTypeDesignationSources": "LPSN", "lpsnTypeDesignation": "type strain of species", "dsmzTypeDesignation": "type strain of species", "lpsnPriorityYear": 2008.0, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora antimicrobica", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora antimicrobica", "gtdb_representative": true, "gtdb_genome_representative": "RS_GCF_003635025.1", "ncbi_type_material_designation": "assembly from type material", "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora", "gtdbSpecies": "s__Saccharopolyspora antimicrobica", "gtdbTypeDesignation.1": "type strain of species", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_003635025.1", "speciesClusterCount": 2.0, "lpsnUrl": "https://lpsn.dsmz.de/species/saccharopolyspora-antimicrobica", "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/455193/\">s__Saccharopolyspora antimicrobica</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/455193/\">s__Saccharopolyspora antimicrobica</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__Saccharopolyspora antimicrobica', 'taxonId': '455193'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 's__Saccharopolyspora antimicrobica', 'taxonId': '455193'}]", "detail": "Genome found"}, {"genome_id": "GCF_900114905.1", "Min": 1089, "N25": 645947, "N50": 345124, "AuN": 667698.4090141996, "gc": 0.7043312457011255, "Max": 1889235, "N75": 181074, "Count": 43, "Total": 8219321, "N90": 107318, "Avg": 191147.0, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora", "Species": "antimicrobica", "Organism": "s__Saccharopolyspora antimicrobica", "accession": "GCA_900114905.1", "name": "GCF_900114905.1", "trna_aa_count": 19.0, "contig_count": 47.0, "n50_contigs": 343399.0, "longest_contig": 1001818.0, "scaffold_count": 43.0, "n50_scaffolds": 345124.0, "longest_scaffold": 1889235.0, "genome_size": 8219321.0, "gc_percentage": 70.43312457011255, "ambiguous_bases": 0.0, "checkm_completeness": 100.0, "checkm_contamination": 3.19, "checkm_strain_heterogeneity": 7.69, "lsu_5s_count": 4.0, "ssu_count": 1.0, "lsu_23s_count": 2.0, "protein_count": 7662.0, "coding_density": 87.72927836739798, "ncbi_genbank_assembly_accession": "GCA_900114905.1", "ncbi_strain_identifiers": "CPCC 201259", "ncbi_assembly_level": "Scaffold", "ncbi_assembly_name": "IMG-taxon 2675903057 annotated assembly", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN05421805", "ncbi_country": null, "ncbi_date": "2016-11-05", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": 0.0, "ncbi_cds_count": 7671.0, "ncbi_refseq_category": "na", "ncbi_seq_rel_date": "2016/11/05", "ncbi_spanned_gaps": 4.0, "ncbi_species_taxid": 455193.0, "ncbi_ssu_count": 5.0, "ncbi_submitter": "DOE - JOINT GENOME INSTITUTE", "ncbi_taxid": 455193.0, "ncbi_total_gap_length": 600.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 54.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": "FOUP00000000.1", "gtdbTypeDesignation": "not type material", "gtdbTypeDesignationSources": null, "lpsnTypeDesignation": "not type material", "dsmzTypeDesignation": "not type material", "lpsnPriorityYear": null, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora antimicrobica", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora antimicrobica", "gtdb_representative": false, "gtdb_genome_representative": "RS_GCF_003635025.1", "ncbi_type_material_designation": null, "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora", "gtdbSpecies": "s__Saccharopolyspora antimicrobica", "gtdbTypeDesignation.1": "not type material", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_003635025.1", "speciesClusterCount": 2.0, "lpsnUrl": "https://lpsn.dsmz.de/species/saccharopolyspora-antimicrobica", "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/455193/\">s__Saccharopolyspora antimicrobica</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/455193/\">s__Saccharopolyspora antimicrobica</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__Saccharopolyspora antimicrobica', 'taxonId': '455193'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 's__Saccharopolyspora antimicrobica', 'taxonId': '455193'}]", "detail": "Genome found"}, {"genome_id": "GCF_007829955.1", "Min": 108233, "N25": 1972629, "N50": 1390797, "AuN": 1194207.103300084, "gc": 0.6970017271329593, "Max": 1972629, "N75": 728787, "Count": 8, "Total": 6410624, "N90": 484333, "Avg": 801328.0, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora", "Species": "dendranthemae", "Organism": "s__Saccharopolyspora dendranthemae", "accession": "GCA_007829955.1", "name": "GCF_007829955.1", "trna_aa_count": 19.0, "contig_count": 8.0, "n50_contigs": 1390797.0, "longest_contig": 1972629.0, "scaffold_count": 8.0, "n50_scaffolds": 1390797.0, "longest_scaffold": 1972629.0, "genome_size": 6410624.0, "gc_percentage": 69.70017271329593, "ambiguous_bases": 0.0, "checkm_completeness": 97.34, "checkm_contamination": 3.88, "checkm_strain_heterogeneity": 31.25, "lsu_5s_count": 4.0, "ssu_count": 4.0, "lsu_23s_count": 4.0, "protein_count": 5786.0, "coding_density": 88.65547254058264, "ncbi_genbank_assembly_accession": "GCA_007829955.1", "ncbi_strain_identifiers": "DSM 46699", "ncbi_assembly_level": "Contig", "ncbi_assembly_name": "ASM782995v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN12024781", "ncbi_country": null, "ncbi_date": "2019-08-02", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": 0.0, "ncbi_cds_count": 5780.0, "ncbi_refseq_category": "representative genome", "ncbi_seq_rel_date": "2019/08/02", "ncbi_spanned_gaps": 0.0, "ncbi_species_taxid": 1181886.0, "ncbi_ssu_count": 4.0, "ncbi_submitter": "DOE Joint Genome Institute", "ncbi_taxid": 1181886.0, "ncbi_total_gap_length": 0.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 50.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": "VIWX00000000.1", "gtdbTypeDesignation": "type strain of species", "gtdbTypeDesignationSources": "LPSN", "lpsnTypeDesignation": "type strain of species", "dsmzTypeDesignation": "type strain of species", "lpsnPriorityYear": 2014.0, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora dendranthemae", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora dendranthemae", "gtdb_representative": true, "gtdb_genome_representative": "RS_GCF_007829955.1", "ncbi_type_material_designation": "assembly from type material", "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora", "gtdbSpecies": "s__Saccharopolyspora dendranthemae", "gtdbTypeDesignation.1": "type strain of species", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_007829955.1", "speciesClusterCount": 1.0, "lpsnUrl": "https://lpsn.dsmz.de/species/saccharopolyspora-dendranthemae", "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1181886/\">s__Saccharopolyspora dendranthemae</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1181886/\">s__Saccharopolyspora dendranthemae</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__Saccharopolyspora dendranthemae', 'taxonId': '1181886'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 's__Saccharopolyspora dendranthemae', 'taxonId': '1181886'}]", "detail": "Genome found"}, {"genome_id": "GCF_018070075.1", "Min": 991, "N25": 669137, "N50": 363995, "AuN": 461743.2178697218, "gc": 0.6975256232823224, "Max": 858004, "N75": 266712, "Count": 34, "Total": 7167017, "N90": 172711, "Avg": 210794.6176470588, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora", "Species": "endophytica", "Organism": "s__Saccharopolyspora endophytica", "accession": "GCA_018070075.1", "name": "GCF_018070075.1", "trna_aa_count": 19.0, "contig_count": 34.0, "n50_contigs": 363995.0, "longest_contig": 858004.0, "scaffold_count": 34.0, "n50_scaffolds": 363995.0, "longest_scaffold": 858004.0, "genome_size": 7167017.0, "gc_percentage": 69.75256232823224, "ambiguous_bases": 0.0, "checkm_completeness": 99.82, "checkm_contamination": 2.86, "checkm_strain_heterogeneity": 0.0, "lsu_5s_count": 4.0, "ssu_count": 1.0, "lsu_23s_count": 1.0, "protein_count": 6643.0, "coding_density": 88.39261857478502, "ncbi_genbank_assembly_accession": "GCA_018070075.1", "ncbi_strain_identifiers": "KCTC 19397", "ncbi_assembly_level": "Contig", "ncbi_assembly_name": "ASM1807007v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN18713782", "ncbi_country": "China: Yunnan", "ncbi_date": "2021-04-18", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": "ENVO:01000349", "ncbi_lat_lon": null, "ncbi_molecule_count": 0.0, "ncbi_cds_count": 6636.0, "ncbi_refseq_category": "representative genome", "ncbi_seq_rel_date": "2021/04/18", "ncbi_spanned_gaps": 0.0, "ncbi_species_taxid": 543886.0, "ncbi_ssu_count": 1.0, "ncbi_submitter": "Ondokuz Mayis University", "ncbi_taxid": 543886.0, "ncbi_total_gap_length": 0.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 51.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": "JAGPXE000000000.1", "gtdbTypeDesignation": "type strain of species", "gtdbTypeDesignationSources": "LPSN", "lpsnTypeDesignation": "type strain of species", "dsmzTypeDesignation": null, "lpsnPriorityYear": 2021.0, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora endophytica", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora endophytica", "gtdb_representative": true, "gtdb_genome_representative": "RS_GCF_018070075.1", "ncbi_type_material_designation": "assembly from type material", "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora", "gtdbSpecies": "s__Saccharopolyspora endophytica", "gtdbTypeDesignation.1": "type strain of species", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_018070075.1", "speciesClusterCount": 3.0, "lpsnUrl": "https://lpsn.dsmz.de/species/saccharopolyspora-endophytica", "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/543886/\">s__Saccharopolyspora endophytica</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/543886/\">s__Saccharopolyspora endophytica</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__Saccharopolyspora endophytica', 'taxonId': '543886'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 's__Saccharopolyspora endophytica', 'taxonId': '543886'}]", "detail": "Genome found"}, {"genome_id": "GCF_016859185.1", "Min": 8305652, "N25": 8305652, "N50": 8305652, "AuN": 8305652.0, "gc": 0.7111245450688278, "Max": 8305652, "N75": 8305652, "Count": 1, "Total": 8305652, "N90": 8305652, "Avg": 8305652.0, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora_D", "Species": "erythraea", "Organism": "s__Saccharopolyspora_D erythraea", "accession": "GCA_016859185.1", "name": "GCF_016859185.1", "trna_aa_count": 19.0, "contig_count": 1.0, "n50_contigs": 8305652.0, "longest_contig": 8305652.0, "scaffold_count": 1.0, "n50_scaffolds": 8305652.0, "longest_scaffold": 8305652.0, "genome_size": 8305652.0, "gc_percentage": 71.11245450688278, "ambiguous_bases": 0.0, "checkm_completeness": 100.0, "checkm_contamination": 2.65, "checkm_strain_heterogeneity": 30.77, "lsu_5s_count": 4.0, "ssu_count": 4.0, "lsu_23s_count": 4.0, "protein_count": 7407.0, "coding_density": 86.26696615750335, "ncbi_genbank_assembly_accession": "GCA_016859185.1", "ncbi_strain_identifiers": "NRRL 23338", "ncbi_assembly_level": "Complete Genome", "ncbi_assembly_name": "ASM1685918v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN17765490", "ncbi_country": "China:Guangdong", "ncbi_date": "2021-02-10", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": "soil", "ncbi_lat_lon": null, "ncbi_molecule_count": 1.0, "ncbi_cds_count": 7349.0, "ncbi_refseq_category": "na", "ncbi_seq_rel_date": "2021/02/10", "ncbi_spanned_gaps": 0.0, "ncbi_species_taxid": 1836.0, "ncbi_ssu_count": 4.0, "ncbi_submitter": "East China University of Science and Technology", "ncbi_taxid": 1836.0, "ncbi_total_gap_length": 0.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 50.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": null, "gtdbTypeDesignation": "not type material", "gtdbTypeDesignationSources": null, "lpsnTypeDesignation": "not type material", "dsmzTypeDesignation": null, "lpsnPriorityYear": null, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora erythraea", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora erythraea", "gtdb_representative": false, "gtdb_genome_representative": "RS_GCF_000062885.1", "ncbi_type_material_designation": null, "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora_D", "gtdbSpecies": "s__Saccharopolyspora_D erythraea", "gtdbTypeDesignation.1": "not type material", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_000062885.1", "speciesClusterCount": 6.0, "lpsnUrl": null, "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1836/\">s__Saccharopolyspora erythraea</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1836/\">s__Saccharopolyspora erythraea</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__Saccharopolyspora erythraea', 'taxonId': '1836'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 's__Saccharopolyspora erythraea', 'taxonId': '1836'}]", "detail": "Genome found"}, {"genome_id": "GCF_018141105.1", "Min": 8243897, "N25": 8243897, "N50": 8243897, "AuN": 8243897.0, "gc": 0.710667418576433, "Max": 8243897, "N75": 8243897, "Count": 1, "Total": 8243897, "N90": 8243897, "Avg": 8243897.0, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora_D", "Species": "erythraea_A", "Organism": "s__Saccharopolyspora_D erythraea_A", "accession": "GCA_018141105.1", "name": "GCF_018141105.1", "trna_aa_count": 19.0, "contig_count": 1.0, "n50_contigs": 8243897.0, "longest_contig": 8243897.0, "scaffold_count": 1.0, "n50_scaffolds": 8243897.0, "longest_scaffold": 8243897.0, "genome_size": 8243897.0, "gc_percentage": 71.06674185764331, "ambiguous_bases": 0.0, "checkm_completeness": 99.65, "checkm_contamination": 2.28, "checkm_strain_heterogeneity": 15.38, "lsu_5s_count": 4.0, "ssu_count": 4.0, "lsu_23s_count": 4.0, "protein_count": 7435.0, "coding_density": 87.28290758606033, "ncbi_genbank_assembly_accession": "GCA_018141105.1", "ncbi_strain_identifiers": "SCSIO 07745", "ncbi_assembly_level": "Complete Genome", "ncbi_assembly_name": "ASM1814110v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN15207696", "ncbi_country": "China:South China Sea", "ncbi_date": "2021-04-27", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": "deep sea sediment", "ncbi_lat_lon": null, "ncbi_molecule_count": 1.0, "ncbi_cds_count": 7404.0, "ncbi_refseq_category": "na", "ncbi_seq_rel_date": "2021/04/27", "ncbi_spanned_gaps": 0.0, "ncbi_species_taxid": 1836.0, "ncbi_ssu_count": 4.0, "ncbi_submitter": "CAS Key Laboratory of Tropical Marine Bio-resources and Ecology", "ncbi_taxid": 1836.0, "ncbi_total_gap_length": 0.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 56.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": null, "gtdbTypeDesignation": "not type material", "gtdbTypeDesignationSources": null, "lpsnTypeDesignation": "not type material", "dsmzTypeDesignation": null, "lpsnPriorityYear": null, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora erythraea", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora erythraea", "gtdb_representative": true, "gtdb_genome_representative": "RS_GCF_018141105.1", "ncbi_type_material_designation": null, "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora_D", "gtdbSpecies": "s__Saccharopolyspora_D erythraea_A", "gtdbTypeDesignation.1": "not type material", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_018141105.1", "speciesClusterCount": 1.0, "lpsnUrl": null, "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1836/\">s__Saccharopolyspora erythraea</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1836/\">s__Saccharopolyspora erythraea</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__Saccharopolyspora erythraea', 'taxonId': '1836'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 's__Saccharopolyspora erythraea', 'taxonId': '1836'}]", "detail": "Genome found"}, {"genome_id": "GCF_022392385.1", "Min": 2379324, "N25": 5801759, "N50": 5801759, "AuN": 4806404.016565655, "gc": 0.7118386770561067, "Max": 5801759, "N75": 2379324, "Count": 2, "Total": 8181083, "N90": 2379324, "Avg": 4090541.5, "gtdb_release": "unknown", "Domain": "d__Bacteria", "Phylum": "p__Actinobacteriota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora_D", "Species": "erythraea", "Organism": "s__Saccharopolyspora_D erythraea", "accession": null, "name": null, "trna_aa_count": null, "contig_count": null, "n50_contigs": null, "longest_contig": null, "scaffold_count": null, "n50_scaffolds": null, "longest_scaffold": null, "genome_size": null, "gc_percentage": null, "ambiguous_bases": null, "checkm_completeness": null, "checkm_contamination": null, "checkm_strain_heterogeneity": null, "lsu_5s_count": null, "ssu_count": null, "lsu_23s_count": null, "protein_count": null, "coding_density": null, "ncbi_genbank_assembly_accession": null, "ncbi_strain_identifiers": null, "ncbi_assembly_level": null, "ncbi_assembly_name": null, "ncbi_assembly_type": null, "ncbi_bioproject": null, "ncbi_biosample": null, "ncbi_country": null, "ncbi_date": null, "ncbi_genome_category": null, "ncbi_genome_representation": null, "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": null, "ncbi_cds_count": null, "ncbi_refseq_category": null, "ncbi_seq_rel_date": null, "ncbi_spanned_gaps": null, "ncbi_species_taxid": null, "ncbi_ssu_count": null, "ncbi_submitter": null, "ncbi_taxid": null, "ncbi_total_gap_length": null, "ncbi_translation_table": null, "ncbi_trna_count": null, "ncbi_unspanned_gaps": null, "ncbi_version_status": null, "ncbi_wgs_master": null, "gtdbTypeDesignation": null, "gtdbTypeDesignationSources": null, "lpsnTypeDesignation": null, "dsmzTypeDesignation": null, "lpsnPriorityYear": null, "gtdbTypeSpeciesOfGenus": null, "ncbi_taxonomy": null, "ncbi_taxonomy_unfiltered": null, "gtdb_representative": null, "gtdb_genome_representative": null, "ncbi_type_material_designation": null, "gtdbDomain": null, "gtdbPhylum": null, "gtdbClass": null, "gtdbOrder": null, "gtdbFamily": null, "gtdbGenus": null, "gtdbSpecies": null, "gtdbTypeDesignation.1": null, "subunit_summary": null, "speciesRepName": null, "speciesClusterCount": null, "lpsnUrl": null, "link_ncbi_taxonomy": null, "link_ncbi_taxonomy_unfiltered": null, "0": null, "1": null, "2": null, "3": null, "4": null, "5": null, "6": null, "ncbiTaxonomyUnfiltered": null, "detail": null}, {"genome_id": "GCF_000062885.1", "Min": 8212805, "N25": 8212805, "N50": 8212805, "AuN": 8212805.0, "gc": 0.7114596048487697, "Max": 8212805, "N75": 8212805, "Count": 1, "Total": 8212805, "N90": 8212805, "Avg": 8212805.0, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora_D", "Species": "erythraea", "Organism": "s__Saccharopolyspora_D erythraea", "accession": "GCA_000062885.1", "name": "GCF_000062885.1", "trna_aa_count": 19.0, "contig_count": 1.0, "n50_contigs": 8212805.0, "longest_contig": 8212805.0, "scaffold_count": 1.0, "n50_scaffolds": 8212805.0, "longest_scaffold": 8212805.0, "genome_size": 8212805.0, "gc_percentage": 71.14596048487697, "ambiguous_bases": 0.0, "checkm_completeness": 100.0, "checkm_contamination": 1.95, "checkm_strain_heterogeneity": 18.18, "lsu_5s_count": 4.0, "ssu_count": 4.0, "lsu_23s_count": 4.0, "protein_count": 7279.0, "coding_density": 86.36916376317227, "ncbi_genbank_assembly_accession": "GCA_000062885.1", "ncbi_strain_identifiers": "NRRL 2338", "ncbi_assembly_level": "Complete Genome", "ncbi_assembly_name": "ASM6288v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMEA2272514", "ncbi_country": null, "ncbi_date": "2007-03-21", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": 1.0, "ncbi_cds_count": 7243.0, "ncbi_refseq_category": "representative genome", "ncbi_seq_rel_date": "2007/03/21", "ncbi_spanned_gaps": 0.0, "ncbi_species_taxid": 1836.0, "ncbi_ssu_count": 4.0, "ncbi_submitter": "Department of Biochemistry, University of Cambridge", "ncbi_taxid": 405948.0, "ncbi_total_gap_length": 0.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 50.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": null, "gtdbTypeDesignation": "type strain of species", "gtdbTypeDesignationSources": "LPSN", "lpsnTypeDesignation": "type strain of species", "dsmzTypeDesignation": "type strain of species", "lpsnPriorityYear": 1923.0, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora erythraea", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora erythraea;x__Saccharopolyspora erythraea NRRL 2338", "gtdb_representative": true, "gtdb_genome_representative": "RS_GCF_000062885.1", "ncbi_type_material_designation": "assembly from type material", "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora_D", "gtdbSpecies": "s__Saccharopolyspora_D erythraea", "gtdbTypeDesignation.1": "type strain of species", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_000062885.1", "speciesClusterCount": 6.0, "lpsnUrl": null, "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1836/\">s__Saccharopolyspora erythraea</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1836/\">s__Saccharopolyspora erythraea</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/405948/\">x__Saccharopolyspora erythraea NRRL 2338</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__Saccharopolyspora erythraea', 'taxonId': '1836'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 's__Saccharopolyspora erythraea', 'taxonId': '1836'}, {'taxon': 'x__Saccharopolyspora erythraea NRRL 2338', 'taxonId': '405948'}]", "detail": "Genome found"}, {"genome_id": "GCF_002564065.1", "Min": 8230103, "N25": 8230103, "N50": 8230103, "AuN": 8230103.0, "gc": 0.7114145473027494, "Max": 8230103, "N75": 8230103, "Count": 1, "Total": 8230103, "N90": 8230103, "Avg": 8230103.0, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora_D", "Species": "erythraea", "Organism": "s__Saccharopolyspora_D erythraea", "accession": "GCA_002564065.1", "name": "GCF_002564065.1", "trna_aa_count": 19.0, "contig_count": 1.0, "n50_contigs": 8230103.0, "longest_contig": 8230103.0, "scaffold_count": 1.0, "n50_scaffolds": 8230103.0, "longest_scaffold": 8230103.0, "genome_size": 8230103.0, "gc_percentage": 71.14145473027494, "ambiguous_bases": 0.0, "checkm_completeness": 100.0, "checkm_contamination": 1.95, "checkm_strain_heterogeneity": 18.18, "lsu_5s_count": 4.0, "ssu_count": 4.0, "lsu_23s_count": 4.0, "protein_count": 7308.0, "coding_density": 86.35506748821977, "ncbi_genbank_assembly_accession": "GCA_002564065.1", "ncbi_strain_identifiers": "DSM 40517", "ncbi_assembly_level": "Contig", "ncbi_assembly_name": "ASM256406v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN05192572", "ncbi_country": null, "ncbi_date": "2017-10-17", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": 0.0, "ncbi_cds_count": 7271.0, "ncbi_refseq_category": "na", "ncbi_seq_rel_date": "2017/10/17", "ncbi_spanned_gaps": 0.0, "ncbi_species_taxid": 1836.0, "ncbi_ssu_count": 4.0, "ncbi_submitter": "DOE Joint Genome Institute", "ncbi_taxid": 405948.0, "ncbi_total_gap_length": 0.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 50.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": "PDBV00000000.1", "gtdbTypeDesignation": "type strain of species", "gtdbTypeDesignationSources": "LPSN", "lpsnTypeDesignation": "type strain of species", "dsmzTypeDesignation": "type strain of species", "lpsnPriorityYear": 1923.0, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora erythraea", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora erythraea;x__Saccharopolyspora erythraea NRRL 2338", "gtdb_representative": false, "gtdb_genome_representative": "RS_GCF_000062885.1", "ncbi_type_material_designation": "assembly from type material", "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora_D", "gtdbSpecies": "s__Saccharopolyspora_D erythraea", "gtdbTypeDesignation.1": "type strain of species", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_000062885.1", "speciesClusterCount": 6.0, "lpsnUrl": null, "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1836/\">s__Saccharopolyspora erythraea</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1836/\">s__Saccharopolyspora erythraea</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/405948/\">x__Saccharopolyspora erythraea NRRL 2338</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__Saccharopolyspora erythraea', 'taxonId': '1836'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 's__Saccharopolyspora erythraea', 'taxonId': '1836'}, {'taxon': 'x__Saccharopolyspora erythraea NRRL 2338', 'taxonId': '405948'}]", "detail": "Genome found"}, {"genome_id": "GCF_900116135.1", "Min": 1350, "N25": 770003, "N50": 505605, "AuN": 691690.7902655716, "gc": 0.7077562954321726, "Max": 1461917, "N75": 302163, "Count": 22, "Total": 6291299, "N90": 158395, "Avg": 285968.1363636364, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora", "Species": "flava", "Organism": "s__Saccharopolyspora flava", "accession": "GCA_900116135.1", "name": "GCF_900116135.1", "trna_aa_count": 19.0, "contig_count": 24.0, "n50_contigs": 453928.0, "longest_contig": 1461917.0, "scaffold_count": 22.0, "n50_scaffolds": 505605.0, "longest_scaffold": 1461917.0, "genome_size": 6291299.0, "gc_percentage": 70.77562954321725, "ambiguous_bases": 0.0, "checkm_completeness": 99.47, "checkm_contamination": 1.76, "checkm_strain_heterogeneity": 0.0, "lsu_5s_count": 4.0, "ssu_count": 1.0, "lsu_23s_count": 1.0, "protein_count": 5631.0, "coding_density": 88.7400201452832, "ncbi_genbank_assembly_accession": "GCA_900116135.1", "ncbi_strain_identifiers": "DSM 44771", "ncbi_assembly_level": "Scaffold", "ncbi_assembly_name": "IMG-taxon 2599185150 annotated assembly", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN05660874", "ncbi_country": null, "ncbi_date": "2016-11-05", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": 0.0, "ncbi_cds_count": 5642.0, "ncbi_refseq_category": "representative genome", "ncbi_seq_rel_date": "2016/11/05", "ncbi_spanned_gaps": 2.0, "ncbi_species_taxid": 95161.0, "ncbi_ssu_count": 3.0, "ncbi_submitter": "DOE - JOINT GENOME INSTITUTE", "ncbi_taxid": 95161.0, "ncbi_total_gap_length": 190.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 51.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": "FOZX00000000.1", "gtdbTypeDesignation": "type strain of species", "gtdbTypeDesignationSources": "LPSN", "lpsnTypeDesignation": "type strain of species", "dsmzTypeDesignation": "type strain of species", "lpsnPriorityYear": 2001.0, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora flava", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora flava", "gtdb_representative": true, "gtdb_genome_representative": "RS_GCF_900116135.1", "ncbi_type_material_designation": "assembly from type material", "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora", "gtdbSpecies": "s__Saccharopolyspora flava", "gtdbTypeDesignation.1": "type strain of species", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_900116135.1", "speciesClusterCount": 1.0, "lpsnUrl": "https://lpsn.dsmz.de/species/saccharopolyspora-flava", "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/95161/\">s__Saccharopolyspora flava</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/95161/\">s__Saccharopolyspora flava</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__Saccharopolyspora flava', 'taxonId': '95161'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 's__Saccharopolyspora flava', 'taxonId': '95161'}]", "detail": "Genome found"}, {"genome_id": "GCF_014203325.1", "Min": 6825909, "N25": 6825909, "N50": 6825909, "AuN": 6825909.0, "gc": 0.7110368743562213, "Max": 6825909, "N75": 6825909, "Count": 1, "Total": 6825909, "N90": 6825909, "Avg": 6825909.0, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora_C", "Species": "gloriosae", "Organism": "s__Saccharopolyspora_C gloriosae", "accession": "GCA_014203325.1", "name": "GCF_014203325.1", "trna_aa_count": 19.0, "contig_count": 1.0, "n50_contigs": 6825909.0, "longest_contig": 6825909.0, "scaffold_count": 1.0, "n50_scaffolds": 6825909.0, "longest_scaffold": 6825909.0, "genome_size": 6825909.0, "gc_percentage": 71.10368743562213, "ambiguous_bases": 0.0, "checkm_completeness": 99.47, "checkm_contamination": 1.54, "checkm_strain_heterogeneity": 0.0, "lsu_5s_count": 4.0, "ssu_count": 4.0, "lsu_23s_count": 4.0, "protein_count": 5929.0, "coding_density": 86.12406054636826, "ncbi_genbank_assembly_accession": "GCA_014203325.1", "ncbi_strain_identifiers": "DSM 45582", "ncbi_assembly_level": "Contig", "ncbi_assembly_name": "ASM1420332v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN05878036", "ncbi_country": null, "ncbi_date": "2020-08-14", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": 0.0, "ncbi_cds_count": 5916.0, "ncbi_refseq_category": "representative genome", "ncbi_seq_rel_date": "2020/08/14", "ncbi_spanned_gaps": 0.0, "ncbi_species_taxid": 455344.0, "ncbi_ssu_count": 4.0, "ncbi_submitter": "DOE Joint Genome Institute", "ncbi_taxid": 455344.0, "ncbi_total_gap_length": 0.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 51.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": "JACHIV000000000.1", "gtdbTypeDesignation": "type strain of species", "gtdbTypeDesignationSources": "LPSN", "lpsnTypeDesignation": "type strain of species", "dsmzTypeDesignation": "type strain of species", "lpsnPriorityYear": 2010.0, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora gloriosae", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora gloriosae", "gtdb_representative": true, "gtdb_genome_representative": "RS_GCF_014203325.1", "ncbi_type_material_designation": "assembly from type material", "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora_C", "gtdbSpecies": "s__Saccharopolyspora_C gloriosae", "gtdbTypeDesignation.1": "type strain of species", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_014203325.1", "speciesClusterCount": 1.0, "lpsnUrl": null, "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/455344/\">s__Saccharopolyspora gloriosae</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/455344/\">s__Saccharopolyspora gloriosae</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__Saccharopolyspora gloriosae', 'taxonId': '455344'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 's__Saccharopolyspora gloriosae', 'taxonId': '455344'}]", "detail": "Genome found"}, {"genome_id": "GCF_022828475.1", "Min": 6878695, "N25": 6878695, "N50": 6878695, "AuN": 6878695.0, "gc": 0.6947996676695216, "Max": 6878695, "N75": 6878695, "Count": 1, "Total": 6878695, "N90": 6878695, "Avg": 6878695.0, "gtdb_release": "unknown", "Domain": "d__Bacteria", "Phylum": "p__Actinobacteriota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora_C", "Species": "s__", "Organism": "s__", "accession": null, "name": null, "trna_aa_count": null, "contig_count": null, "n50_contigs": null, "longest_contig": null, "scaffold_count": null, "n50_scaffolds": null, "longest_scaffold": null, "genome_size": null, "gc_percentage": null, "ambiguous_bases": null, "checkm_completeness": null, "checkm_contamination": null, "checkm_strain_heterogeneity": null, "lsu_5s_count": null, "ssu_count": null, "lsu_23s_count": null, "protein_count": null, "coding_density": null, "ncbi_genbank_assembly_accession": null, "ncbi_strain_identifiers": null, "ncbi_assembly_level": null, "ncbi_assembly_name": null, "ncbi_assembly_type": null, "ncbi_bioproject": null, "ncbi_biosample": null, "ncbi_country": null, "ncbi_date": null, "ncbi_genome_category": null, "ncbi_genome_representation": null, "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": null, "ncbi_cds_count": null, "ncbi_refseq_category": null, "ncbi_seq_rel_date": null, "ncbi_spanned_gaps": null, "ncbi_species_taxid": null, "ncbi_ssu_count": null, "ncbi_submitter": null, "ncbi_taxid": null, "ncbi_total_gap_length": null, "ncbi_translation_table": null, "ncbi_trna_count": null, "ncbi_unspanned_gaps": null, "ncbi_version_status": null, "ncbi_wgs_master": null, "gtdbTypeDesignation": null, "gtdbTypeDesignationSources": null, "lpsnTypeDesignation": null, "dsmzTypeDesignation": null, "lpsnPriorityYear": null, "gtdbTypeSpeciesOfGenus": null, "ncbi_taxonomy": null, "ncbi_taxonomy_unfiltered": null, "gtdb_representative": null, "gtdb_genome_representative": null, "ncbi_type_material_designation": null, "gtdbDomain": null, "gtdbPhylum": null, "gtdbClass": null, "gtdbOrder": null, "gtdbFamily": null, "gtdbGenus": null, "gtdbSpecies": null, "gtdbTypeDesignation.1": null, "subunit_summary": null, "speciesRepName": null, "speciesClusterCount": null, "lpsnUrl": null, "link_ncbi_taxonomy": null, "link_ncbi_taxonomy_unfiltered": null, "0": null, "1": null, "2": null, "3": null, "4": null, "5": null, "6": null, "ncbiTaxonomyUnfiltered": null, "detail": null}, {"genome_id": "GCF_024734405.1", "Min": 6344421, "N25": 6344421, "N50": 6344421, "AuN": 6344421.0, "gc": 0.7266721423436433, "Max": 6344421, "N75": 6344421, "Count": 1, "Total": 6344421, "N90": 6344421, "Avg": 6344421.0, "gtdb_release": "unknown", "Domain": "d__Bacteria", "Phylum": "p__Actinobacteriota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora_C", "Species": "s__", "Organism": "s__", "accession": null, "name": null, "trna_aa_count": null, "contig_count": null, "n50_contigs": null, "longest_contig": null, "scaffold_count": null, "n50_scaffolds": null, "longest_scaffold": null, "genome_size": null, "gc_percentage": null, "ambiguous_bases": null, "checkm_completeness": null, "checkm_contamination": null, "checkm_strain_heterogeneity": null, "lsu_5s_count": null, "ssu_count": null, "lsu_23s_count": null, "protein_count": null, "coding_density": null, "ncbi_genbank_assembly_accession": null, "ncbi_strain_identifiers": null, "ncbi_assembly_level": null, "ncbi_assembly_name": null, "ncbi_assembly_type": null, "ncbi_bioproject": null, "ncbi_biosample": null, "ncbi_country": null, "ncbi_date": null, "ncbi_genome_category": null, "ncbi_genome_representation": null, "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": null, "ncbi_cds_count": null, "ncbi_refseq_category": null, "ncbi_seq_rel_date": null, "ncbi_spanned_gaps": null, "ncbi_species_taxid": null, "ncbi_ssu_count": null, "ncbi_submitter": null, "ncbi_taxid": null, "ncbi_total_gap_length": null, "ncbi_translation_table": null, "ncbi_trna_count": null, "ncbi_unspanned_gaps": null, "ncbi_version_status": null, "ncbi_wgs_master": null, "gtdbTypeDesignation": null, "gtdbTypeDesignationSources": null, "lpsnTypeDesignation": null, "dsmzTypeDesignation": null, "lpsnPriorityYear": null, "gtdbTypeSpeciesOfGenus": null, "ncbi_taxonomy": null, "ncbi_taxonomy_unfiltered": null, "gtdb_representative": null, "gtdb_genome_representative": null, "ncbi_type_material_designation": null, "gtdbDomain": null, "gtdbPhylum": null, "gtdbClass": null, "gtdbOrder": null, "gtdbFamily": null, "gtdbGenus": null, "gtdbSpecies": null, "gtdbTypeDesignation.1": null, "subunit_summary": null, "speciesRepName": null, "speciesClusterCount": null, "lpsnUrl": null, "link_ncbi_taxonomy": null, "link_ncbi_taxonomy_unfiltered": null, "0": null, "1": null, "2": null, "3": null, "4": null, "5": null, "6": null, "ncbiTaxonomyUnfiltered": null, "detail": null}, {"genome_id": "GCF_008630535.1", "Min": 509, "N25": 570786, "N50": 504440, "AuN": 427311.5363761744, "gc": 0.7140299510212214, "Max": 688257, "N75": 256700, "Count": 46, "Total": 7549392, "N90": 180403, "Avg": 164117.2173913044, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora", "Species": "hirsuta", "Organism": "s__Saccharopolyspora hirsuta", "accession": "GCA_008630535.1", "name": "GCF_008630535.1", "trna_aa_count": 19.0, "contig_count": 46.0, "n50_contigs": 504440.0, "longest_contig": 688257.0, "scaffold_count": 46.0, "n50_scaffolds": 504440.0, "longest_scaffold": 688257.0, "genome_size": 7549392.0, "gc_percentage": 71.40299510212213, "ambiguous_bases": 0.0, "checkm_completeness": 99.44, "checkm_contamination": 2.62, "checkm_strain_heterogeneity": 0.0, "lsu_5s_count": 4.0, "ssu_count": 2.0, "lsu_23s_count": 4.0, "protein_count": 6830.0, "coding_density": 88.11830144732185, "ncbi_genbank_assembly_accession": "GCA_008630535.1", "ncbi_strain_identifiers": "VKM Ac-666", "ncbi_assembly_level": "Contig", "ncbi_assembly_name": "ASM863053v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN12725943", "ncbi_country": "Trinidad and Tobago: Trinidad", "ncbi_date": "2019-09-20", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": "sugar cane bagasse", "ncbi_lat_lon": null, "ncbi_molecule_count": 0.0, "ncbi_cds_count": 6822.0, "ncbi_refseq_category": "representative genome", "ncbi_seq_rel_date": "2019/09/20", "ncbi_spanned_gaps": 0.0, "ncbi_species_taxid": 1837.0, "ncbi_ssu_count": 4.0, "ncbi_submitter": "PSCBR RAS G.K. Skryabin Institute of Biochemistry and Physiology of Microorganisms RAS", "ncbi_taxid": 1837.0, "ncbi_total_gap_length": 0.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 53.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": "VWPH00000000.1", "gtdbTypeDesignation": "type strain of species", "gtdbTypeDesignationSources": "LPSN", "lpsnTypeDesignation": "type strain of species", "dsmzTypeDesignation": "type strain of species", "lpsnPriorityYear": 1975.0, "gtdbTypeSpeciesOfGenus": true, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora hirsuta", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora hirsuta", "gtdb_representative": true, "gtdb_genome_representative": "RS_GCF_008630535.1", "ncbi_type_material_designation": "assembly from type material", "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora", "gtdbSpecies": "s__Saccharopolyspora hirsuta", "gtdbTypeDesignation.1": "type strain of species", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_008630535.1", "speciesClusterCount": 1.0, "lpsnUrl": "https://lpsn.dsmz.de/species/saccharopolyspora-hirsuta", "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1837/\">s__Saccharopolyspora hirsuta</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1837/\">s__Saccharopolyspora hirsuta</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__Saccharopolyspora hirsuta', 'taxonId': '1837'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 's__Saccharopolyspora hirsuta', 'taxonId': '1837'}]", "detail": "Genome found"}, {"genome_id": "GCF_013410345.1", "Min": 5783988, "N25": 5783988, "N50": 5783988, "AuN": 5783988.0, "gc": 0.7247914414760197, "Max": 5783988, "N75": 5783988, "Count": 1, "Total": 5783988, "N90": 5783988, "Avg": 5783988.0, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora", "Species": "hordei", "Organism": "s__Saccharopolyspora hordei", "accession": "GCA_013410345.1", "name": "GCF_013410345.1", "trna_aa_count": 19.0, "contig_count": 1.0, "n50_contigs": 5783988.0, "longest_contig": 5783988.0, "scaffold_count": 1.0, "n50_scaffolds": 5783988.0, "longest_scaffold": 5783988.0, "genome_size": 5783988.0, "gc_percentage": 72.47914414760197, "ambiguous_bases": 0.0, "checkm_completeness": 99.65, "checkm_contamination": 1.84, "checkm_strain_heterogeneity": 0.0, "lsu_5s_count": 5.0, "ssu_count": 5.0, "lsu_23s_count": 5.0, "protein_count": 5267.0, "coding_density": 87.91285528254899, "ncbi_genbank_assembly_accession": "GCA_013410345.1", "ncbi_strain_identifiers": "DSM 44065", "ncbi_assembly_level": "Contig", "ncbi_assembly_name": "ASM1341034v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN14908465", "ncbi_country": null, "ncbi_date": "2020-07-13", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": 0.0, "ncbi_cds_count": 5239.0, "ncbi_refseq_category": "representative genome", "ncbi_seq_rel_date": "2020/07/13", "ncbi_spanned_gaps": 0.0, "ncbi_species_taxid": 1838.0, "ncbi_ssu_count": 5.0, "ncbi_submitter": "DOE Joint Genome Institute", "ncbi_taxid": 1838.0, "ncbi_total_gap_length": 0.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 51.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": "JACCFJ000000000.1", "gtdbTypeDesignation": "type strain of species", "gtdbTypeDesignationSources": "LPSN", "lpsnTypeDesignation": "type strain of species", "dsmzTypeDesignation": "type strain of species", "lpsnPriorityYear": 1989.0, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora hordei", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora hordei", "gtdb_representative": true, "gtdb_genome_representative": "RS_GCF_013410345.1", "ncbi_type_material_designation": "assembly from type material", "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora", "gtdbSpecies": "s__Saccharopolyspora hordei", "gtdbTypeDesignation.1": "type strain of species", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_013410345.1", "speciesClusterCount": 1.0, "lpsnUrl": "https://lpsn.dsmz.de/species/saccharopolyspora-hordei", "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1838/\">s__Saccharopolyspora hordei</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1838/\">s__Saccharopolyspora hordei</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__Saccharopolyspora hordei', 'taxonId': '1838'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 's__Saccharopolyspora hordei', 'taxonId': '1838'}]", "detail": "Genome found"}, {"genome_id": "GCF_900112555.1", "Min": 1234, "N25": 1963067, "N50": 406024, "AuN": 749567.9876410058, "gc": 0.7089995844725187, "Max": 1963067, "N75": 235081, "Count": 28, "Total": 7777251, "N90": 130602, "Avg": 277758.9642857143, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora", "Species": "kobensis", "Organism": "s__Saccharopolyspora kobensis", "accession": "GCA_900112555.1", "name": "GCF_900112555.1", "trna_aa_count": 19.0, "contig_count": 31.0, "n50_contigs": 406024.0, "longest_contig": 1200418.0, "scaffold_count": 28.0, "n50_scaffolds": 406024.0, "longest_scaffold": 1963067.0, "genome_size": 7777251.0, "gc_percentage": 70.89995844725186, "ambiguous_bases": 0.0, "checkm_completeness": 99.53, "checkm_contamination": 2.72, "checkm_strain_heterogeneity": 0.0, "lsu_5s_count": 4.0, "ssu_count": 1.0, "lsu_23s_count": 2.0, "protein_count": 7257.0, "coding_density": 88.10862604280098, "ncbi_genbank_assembly_accession": "GCA_900112555.1", "ncbi_strain_identifiers": "CGMCC 4.3529", "ncbi_assembly_level": "Scaffold", "ncbi_assembly_name": "IMG-taxon 2667527438 annotated assembly", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN05216506", "ncbi_country": null, "ncbi_date": "2016-11-05", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": 0.0, "ncbi_cds_count": 7220.0, "ncbi_refseq_category": "representative genome", "ncbi_seq_rel_date": "2016/11/05", "ncbi_spanned_gaps": 3.0, "ncbi_species_taxid": 146035.0, "ncbi_ssu_count": 5.0, "ncbi_submitter": "DOE - JOINT GENOME INSTITUTE", "ncbi_taxid": 146035.0, "ncbi_total_gap_length": 1592.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 54.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": "FOME00000000.1", "gtdbTypeDesignation": "type strain of heterotypic synonym", "gtdbTypeDesignationSources": "LPSN", "lpsnTypeDesignation": "type strain of heterotypic synonym", "dsmzTypeDesignation": "type strain of species", "lpsnPriorityYear": 2009.0, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora kobensis", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora kobensis", "gtdb_representative": false, "gtdb_genome_representative": "RS_GCF_900108315.1", "ncbi_type_material_designation": "assembly from synonym type material", "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora", "gtdbSpecies": "s__Saccharopolyspora kobensis", "gtdbTypeDesignation.1": "type strain of heterotypic synonym", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_900108315.1", "speciesClusterCount": 2.0, "lpsnUrl": "https://lpsn.dsmz.de/species/saccharopolyspora-kobensis", "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/146035/\">s__Saccharopolyspora kobensis</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/146035/\">s__Saccharopolyspora kobensis</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__Saccharopolyspora kobensis', 'taxonId': '146035'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 's__Saccharopolyspora kobensis', 'taxonId': '146035'}]", "detail": "Genome found"}, {"genome_id": "GCF_900108315.1", "Min": 1135, "N25": 946972, "N50": 729242, "AuN": 901391.3897468094, "gc": 0.7089549423325838, "Max": 1906593, "N75": 439427, "Count": 27, "Total": 7744048, "N90": 129812, "Avg": 286816.5925925926, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora", "Species": "kobensis", "Organism": "s__Saccharopolyspora kobensis", "accession": "GCA_900108315.1", "name": "GCF_900108315.1", "trna_aa_count": 19.0, "contig_count": 33.0, "n50_contigs": 469672.0, "longest_contig": 1077102.0, "scaffold_count": 27.0, "n50_scaffolds": 729242.0, "longest_scaffold": 1906593.0, "genome_size": 7744048.0, "gc_percentage": 70.89549423325838, "ambiguous_bases": 0.0, "checkm_completeness": 99.65, "checkm_contamination": 2.72, "checkm_strain_heterogeneity": 0.0, "lsu_5s_count": 5.0, "ssu_count": 1.0, "lsu_23s_count": 2.0, "protein_count": 7185.0, "coding_density": 88.04439228682467, "ncbi_genbank_assembly_accession": "GCA_900108315.1", "ncbi_strain_identifiers": "ATCC 20501", "ncbi_assembly_level": "Scaffold", "ncbi_assembly_name": "IMG-taxon 2597490365 annotated assembly", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN02982929", "ncbi_country": null, "ncbi_date": "2016-10-24", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": 0.0, "ncbi_cds_count": 7170.0, "ncbi_refseq_category": "na", "ncbi_seq_rel_date": "2016/10/24", "ncbi_spanned_gaps": 6.0, "ncbi_species_taxid": 146035.0, "ncbi_ssu_count": 6.0, "ncbi_submitter": "DOE - JOINT GENOME INSTITUTE", "ncbi_taxid": 146035.0, "ncbi_total_gap_length": 4322.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 54.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": "FNVB00000000.1", "gtdbTypeDesignation": "type strain of species", "gtdbTypeDesignationSources": "LPSN", "lpsnTypeDesignation": "type strain of species", "dsmzTypeDesignation": "not type material", "lpsnPriorityYear": 1989.0, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora kobensis", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora kobensis", "gtdb_representative": true, "gtdb_genome_representative": "RS_GCF_900108315.1", "ncbi_type_material_designation": "assembly from type material", "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora", "gtdbSpecies": "s__Saccharopolyspora kobensis", "gtdbTypeDesignation.1": "type strain of species", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_900108315.1", "speciesClusterCount": 2.0, "lpsnUrl": "https://lpsn.dsmz.de/species/saccharopolyspora-kobensis", "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/146035/\">s__Saccharopolyspora kobensis</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/146035/\">s__Saccharopolyspora kobensis</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__Saccharopolyspora kobensis', 'taxonId': '146035'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 's__Saccharopolyspora kobensis', 'taxonId': '146035'}]", "detail": "Genome found"}, {"genome_id": "GCF_014203395.1", "Min": 23145, "N25": 5889697, "N50": 5889697, "AuN": 4605386.068030324, "gc": 0.6772580746183299, "Max": 5889697, "N75": 2131380, "Count": 6, "Total": 8541735, "N90": 2131380, "Avg": 1423622.5, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora", "Species": "phatthalungensis", "Organism": "s__Saccharopolyspora phatthalungensis", "accession": "GCA_014203395.1", "name": "GCF_014203395.1", "trna_aa_count": 19.0, "contig_count": 6.0, "n50_contigs": 5889697.0, "longest_contig": 5889697.0, "scaffold_count": 6.0, "n50_scaffolds": 5889697.0, "longest_scaffold": 5889697.0, "genome_size": 8541735.0, "gc_percentage": 67.72580746183299, "ambiguous_bases": 0.0, "checkm_completeness": 99.29, "checkm_contamination": 4.08, "checkm_strain_heterogeneity": 0.0, "lsu_5s_count": 4.0, "ssu_count": 4.0, "lsu_23s_count": 4.0, "protein_count": 7445.0, "coding_density": 86.55130368713148, "ncbi_genbank_assembly_accession": "GCA_014203395.1", "ncbi_strain_identifiers": "DSM 45584", "ncbi_assembly_level": "Contig", "ncbi_assembly_name": "ASM1420339v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN05878392", "ncbi_country": null, "ncbi_date": "2020-08-14", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": 0.0, "ncbi_cds_count": 7331.0, "ncbi_refseq_category": "representative genome", "ncbi_seq_rel_date": "2020/08/14", "ncbi_spanned_gaps": 0.0, "ncbi_species_taxid": 664693.0, "ncbi_ssu_count": 4.0, "ncbi_submitter": "DOE Joint Genome Institute", "ncbi_taxid": 664693.0, "ncbi_total_gap_length": 0.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 52.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": "JACHIW000000000.1", "gtdbTypeDesignation": "type strain of species", "gtdbTypeDesignationSources": "LPSN", "lpsnTypeDesignation": "type strain of species", "dsmzTypeDesignation": "type strain of species", "lpsnPriorityYear": 2010.0, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora phatthalungensis", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora phatthalungensis", "gtdb_representative": true, "gtdb_genome_representative": "RS_GCF_014203395.1", "ncbi_type_material_designation": "assembly from type material", "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora", "gtdbSpecies": "s__Saccharopolyspora phatthalungensis", "gtdbTypeDesignation.1": "type strain of species", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_014203395.1", "speciesClusterCount": 2.0, "lpsnUrl": "https://lpsn.dsmz.de/species/saccharopolyspora-phatthalungensis", "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/664693/\">s__Saccharopolyspora phatthalungensis</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/664693/\">s__Saccharopolyspora phatthalungensis</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__Saccharopolyspora phatthalungensis', 'taxonId': '664693'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 's__Saccharopolyspora phatthalungensis', 'taxonId': '664693'}]", "detail": "Genome found"}, {"genome_id": "GCF_014697215.1", "Min": 85530, "N25": 9436548, "N50": 9436548, "AuN": 9269514.839606252, "gc": 0.6792499724193344, "Max": 9436548, "N75": 9436548, "Count": 3, "Total": 9608180, "N90": 9436548, "Avg": 3202726.666666667, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora", "Species": "pogona", "Organism": "s__Saccharopolyspora pogona", "accession": "GCA_014697215.1", "name": "GCF_014697215.1", "trna_aa_count": 19.0, "contig_count": 3.0, "n50_contigs": 9436548.0, "longest_contig": 9436548.0, "scaffold_count": 3.0, "n50_scaffolds": 9436548.0, "longest_scaffold": 9436548.0, "genome_size": 9608180.0, "gc_percentage": 67.92499724193344, "ambiguous_bases": 0.0, "checkm_completeness": 99.88, "checkm_contamination": 5.94, "checkm_strain_heterogeneity": 3.33, "lsu_5s_count": 5.0, "ssu_count": 5.0, "lsu_23s_count": 5.0, "protein_count": 9217.0, "coding_density": 84.17722190883185, "ncbi_genbank_assembly_accession": "GCA_014697215.1", "ncbi_strain_identifiers": "NRRL30141", "ncbi_assembly_level": "Complete Genome", "ncbi_assembly_name": "ASM1469721v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN09531813", "ncbi_country": "USA:Indiana", "ncbi_date": "2020-09-22", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": "soil", "ncbi_lat_lon": null, "ncbi_molecule_count": 3.0, "ncbi_cds_count": 9183.0, "ncbi_refseq_category": "representative genome", "ncbi_seq_rel_date": "2020/09/22", "ncbi_spanned_gaps": 0.0, "ncbi_species_taxid": 333966.0, "ncbi_ssu_count": 5.0, "ncbi_submitter": "Hunan Normal University", "ncbi_taxid": 333966.0, "ncbi_total_gap_length": 0.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 54.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": null, "gtdbTypeDesignation": "not type material", "gtdbTypeDesignationSources": null, "lpsnTypeDesignation": "not type material", "dsmzTypeDesignation": null, "lpsnPriorityYear": null, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora pogona", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora pogona", "gtdb_representative": true, "gtdb_genome_representative": "RS_GCF_014697215.1", "ncbi_type_material_designation": null, "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora", "gtdbSpecies": "s__Saccharopolyspora pogona", "gtdbTypeDesignation.1": "not type material", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_014697215.1", "speciesClusterCount": 2.0, "lpsnUrl": null, "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/333966/\">s__Saccharopolyspora pogona</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/333966/\">s__Saccharopolyspora pogona</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__Saccharopolyspora pogona', 'taxonId': '333966'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 's__Saccharopolyspora pogona', 'taxonId': '333966'}]", "detail": "Genome found"}, {"genome_id": "GCF_003931915.1", "Min": 209, "N25": 519254, "N50": 345543, "AuN": 406293.1617865756, "gc": 0.7063295616186468, "Max": 768785, "N75": 262675, "Count": 35, "Total": 5824618, "N90": 165974, "Avg": 166417.6571428571, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora", "Species": "rhizosphaerae", "Organism": "s__Saccharopolyspora rhizosphaerae", "accession": "GCA_003931915.1", "name": "GCF_003931915.1", "trna_aa_count": 19.0, "contig_count": 36.0, "n50_contigs": 345543.0, "longest_contig": 768785.0, "scaffold_count": 35.0, "n50_scaffolds": 345543.0, "longest_scaffold": 768785.0, "genome_size": 5824618.0, "gc_percentage": 70.63295616186468, "ambiguous_bases": 0.0, "checkm_completeness": 100.0, "checkm_contamination": 1.49, "checkm_strain_heterogeneity": 0.0, "lsu_5s_count": 1.0, "ssu_count": 1.0, "lsu_23s_count": 1.0, "protein_count": 5362.0, "coding_density": 85.9602123263706, "ncbi_genbank_assembly_accession": "GCA_003931915.1", "ncbi_strain_identifiers": "H219", "ncbi_assembly_level": "Scaffold", "ncbi_assembly_name": "ASM393191v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN10498557", "ncbi_country": "Thailand", "ncbi_date": "2018-12-09", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": "rhizosphere soil", "ncbi_lat_lon": null, "ncbi_molecule_count": 0.0, "ncbi_cds_count": 5313.0, "ncbi_refseq_category": "representative genome", "ncbi_seq_rel_date": "2018/12/09", "ncbi_spanned_gaps": 1.0, "ncbi_species_taxid": 2492662.0, "ncbi_ssu_count": 2.0, "ncbi_submitter": "Mahidol University", "ncbi_taxid": 2492662.0, "ncbi_total_gap_length": 123.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 51.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": "RSAA00000000.1", "gtdbTypeDesignation": "type strain of species", "gtdbTypeDesignationSources": "LPSN", "lpsnTypeDesignation": "type strain of species", "dsmzTypeDesignation": "not type material", "lpsnPriorityYear": 2019.0, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora rhizosphaerae", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora rhizosphaerae", "gtdb_representative": true, "gtdb_genome_representative": "RS_GCF_003931915.1", "ncbi_type_material_designation": "assembly from type material", "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora", "gtdbSpecies": "s__Saccharopolyspora rhizosphaerae", "gtdbTypeDesignation.1": "type strain of species", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_003931915.1", "speciesClusterCount": 1.0, "lpsnUrl": "https://lpsn.dsmz.de/species/saccharopolyspora-rhizosphaerae", "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2492662/\">s__Saccharopolyspora rhizosphaerae</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2492662/\">s__Saccharopolyspora rhizosphaerae</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__Saccharopolyspora rhizosphaerae', 'taxonId': '2492662'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 's__Saccharopolyspora rhizosphaerae', 'taxonId': '2492662'}]", "detail": "Genome found"}, {"genome_id": "GCF_025643595.1", "Min": 6562638, "N25": 6562638, "N50": 6562638, "AuN": 6562638.0, "gc": 0.7170576832060522, "Max": 6562638, "N75": 6562638, "Count": 1, "Total": 6562638, "N90": 6562638, "Avg": 6562638.0, "gtdb_release": "unknown", "Domain": "d__Bacteria", "Phylum": "p__Actinobacteriota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora", "Species": "s__", "Organism": "s__", "accession": null, "name": null, "trna_aa_count": null, "contig_count": null, "n50_contigs": null, "longest_contig": null, "scaffold_count": null, "n50_scaffolds": null, "longest_scaffold": null, "genome_size": null, "gc_percentage": null, "ambiguous_bases": null, "checkm_completeness": null, "checkm_contamination": null, "checkm_strain_heterogeneity": null, "lsu_5s_count": null, "ssu_count": null, "lsu_23s_count": null, "protein_count": null, "coding_density": null, "ncbi_genbank_assembly_accession": null, "ncbi_strain_identifiers": null, "ncbi_assembly_level": null, "ncbi_assembly_name": null, "ncbi_assembly_type": null, "ncbi_bioproject": null, "ncbi_biosample": null, "ncbi_country": null, "ncbi_date": null, "ncbi_genome_category": null, "ncbi_genome_representation": null, "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": null, "ncbi_cds_count": null, "ncbi_refseq_category": null, "ncbi_seq_rel_date": null, "ncbi_spanned_gaps": null, "ncbi_species_taxid": null, "ncbi_ssu_count": null, "ncbi_submitter": null, "ncbi_taxid": null, "ncbi_total_gap_length": null, "ncbi_translation_table": null, "ncbi_trna_count": null, "ncbi_unspanned_gaps": null, "ncbi_version_status": null, "ncbi_wgs_master": null, "gtdbTypeDesignation": null, "gtdbTypeDesignationSources": null, "lpsnTypeDesignation": null, "dsmzTypeDesignation": null, "lpsnPriorityYear": null, "gtdbTypeSpeciesOfGenus": null, "ncbi_taxonomy": null, "ncbi_taxonomy_unfiltered": null, "gtdb_representative": null, "gtdb_genome_representative": null, "ncbi_type_material_designation": null, "gtdbDomain": null, "gtdbPhylum": null, "gtdbClass": null, "gtdbOrder": null, "gtdbFamily": null, "gtdbGenus": null, "gtdbSpecies": null, "gtdbTypeDesignation.1": null, "subunit_summary": null, "speciesRepName": null, "speciesClusterCount": null, "lpsnUrl": null, "link_ncbi_taxonomy": null, "link_ncbi_taxonomy_unfiltered": null, "0": null, "1": null, "2": null, "3": null, "4": null, "5": null, "6": null, "ncbiTaxonomyUnfiltered": null, "detail": null}, {"genome_id": "GCF_012277335.1", "Min": 8045912, "N25": 8045912, "N50": 8045912, "AuN": 8045912.0, "gc": 0.6810451071301798, "Max": 8045912, "N75": 8045912, "Count": 1, "Total": 8045912, "N90": 8045912, "Avg": 8045912.0, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora", "Species": "pogona", "Organism": "s__Saccharopolyspora pogona", "accession": "GCA_012277335.1", "name": "GCF_012277335.1", "trna_aa_count": 19.0, "contig_count": 1.0, "n50_contigs": 8045912.0, "longest_contig": 8045912.0, "scaffold_count": 1.0, "n50_scaffolds": 8045912.0, "longest_scaffold": 8045912.0, "genome_size": 8045912.0, "gc_percentage": 68.10451071301799, "ambiguous_bases": 0.0, "checkm_completeness": 99.88, "checkm_contamination": 3.05, "checkm_strain_heterogeneity": 5.88, "lsu_5s_count": 5.0, "ssu_count": 5.0, "lsu_23s_count": 5.0, "protein_count": 7504.0, "coding_density": 84.22994186364454, "ncbi_genbank_assembly_accession": "GCA_012277335.1", "ncbi_strain_identifiers": "ASAGF58", "ncbi_assembly_level": "Complete Genome", "ncbi_assembly_name": "ASM1227733v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN11488380", "ncbi_country": "China: Wenzhou", "ncbi_date": "2020-04-14", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": "soil", "ncbi_lat_lon": null, "ncbi_molecule_count": 1.0, "ncbi_cds_count": 7450.0, "ncbi_refseq_category": "na", "ncbi_seq_rel_date": "2020/04/14", "ncbi_spanned_gaps": 0.0, "ncbi_species_taxid": 2719023.0, "ncbi_ssu_count": 5.0, "ncbi_submitter": "Academy of National Food and Strategic Reserves Administration", "ncbi_taxid": 2719023.0, "ncbi_total_gap_length": 0.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 53.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": null, "gtdbTypeDesignation": "not type material", "gtdbTypeDesignationSources": null, "lpsnTypeDesignation": "not type material", "dsmzTypeDesignation": "not type material", "lpsnPriorityYear": null, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;x__unclassified Saccharopolyspora;s__Saccharopolyspora sp. ASAGF58", "gtdb_representative": false, "gtdb_genome_representative": "RS_GCF_014697215.1", "ncbi_type_material_designation": null, "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora", "gtdbSpecies": "s__Saccharopolyspora pogona", "gtdbTypeDesignation.1": "not type material", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_014697215.1", "speciesClusterCount": 2.0, "lpsnUrl": null, "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; s__", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2646250/\">x__unclassified Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2719023/\">s__Saccharopolyspora sp. ASAGF58</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__', 'taxonId': None}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 'x__unclassified Saccharopolyspora', 'taxonId': '2646250'}, {'taxon': 's__Saccharopolyspora sp. ASAGF58', 'taxonId': '2719023'}]", "detail": "Genome found"}, {"genome_id": "GCF_016526145.1", "Min": 1107, "N25": 718680, "N50": 454807, "AuN": 489088.8301811847, "gc": 0.7029273240831624, "Max": 979558, "N75": 275939, "Count": 34, "Total": 6397171, "N90": 118167, "Avg": 188152.0882352941, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora_C", "Species": "sp016526145", "Organism": "s__Saccharopolyspora_C sp016526145", "accession": "GCA_016526145.1", "name": "GCF_016526145.1", "trna_aa_count": 19.0, "contig_count": 35.0, "n50_contigs": 406614.0, "longest_contig": 979558.0, "scaffold_count": 34.0, "n50_scaffolds": 454807.0, "longest_scaffold": 979558.0, "genome_size": 6397171.0, "gc_percentage": 70.29273240831624, "ambiguous_bases": 0.0, "checkm_completeness": 99.47, "checkm_contamination": 1.48, "checkm_strain_heterogeneity": 0.0, "lsu_5s_count": 3.0, "ssu_count": 1.0, "lsu_23s_count": 1.0, "protein_count": 5826.0, "coding_density": 87.22302405235064, "ncbi_genbank_assembly_accession": "GCA_016526145.1", "ncbi_strain_identifiers": "HNM0986", "ncbi_assembly_level": "Scaffold", "ncbi_assembly_name": "ASM1652614v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN16483406", "ncbi_country": "China: Hainan", "ncbi_date": "2021-01-05", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": "marine", "ncbi_lat_lon": null, "ncbi_molecule_count": 0.0, "ncbi_cds_count": 5841.0, "ncbi_refseq_category": "na", "ncbi_seq_rel_date": "2021/01/05", "ncbi_spanned_gaps": 1.0, "ncbi_species_taxid": 2781241.0, "ncbi_ssu_count": 1.0, "ncbi_submitter": "Hainan University", "ncbi_taxid": 2781241.0, "ncbi_total_gap_length": 100.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 53.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": "JADDUE000000000.1", "gtdbTypeDesignation": "not type material", "gtdbTypeDesignationSources": null, "lpsnTypeDesignation": "not type material", "dsmzTypeDesignation": null, "lpsnPriorityYear": null, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;x__unclassified Saccharopolyspora;s__Saccharopolyspora sp. HNM0986", "gtdb_representative": true, "gtdb_genome_representative": "RS_GCF_016526145.1", "ncbi_type_material_designation": null, "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora_C", "gtdbSpecies": "s__Saccharopolyspora_C sp016526145", "gtdbTypeDesignation.1": "not type material", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_016526145.1", "speciesClusterCount": 2.0, "lpsnUrl": null, "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; s__", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2646250/\">x__unclassified Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2781241/\">s__Saccharopolyspora sp. HNM0986</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__', 'taxonId': None}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 'x__unclassified Saccharopolyspora', 'taxonId': '2646250'}, {'taxon': 's__Saccharopolyspora sp. HNM0986', 'taxonId': '2781241'}]", "detail": "Genome found"}, {"genome_id": "GCF_014490055.1", "Min": 8876435, "N25": 8876435, "N50": 8876435, "AuN": 8876435.0, "gc": 0.6796706110054318, "Max": 8876435, "N75": 8876435, "Count": 1, "Total": 8876435, "N90": 8876435, "Avg": 8876435.0, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora", "Species": "spinosa", "Organism": "s__Saccharopolyspora spinosa", "accession": "GCA_014490055.1", "name": "GCF_014490055.1", "trna_aa_count": 19.0, "contig_count": 1.0, "n50_contigs": 8876435.0, "longest_contig": 8876435.0, "scaffold_count": 1.0, "n50_scaffolds": 8876435.0, "longest_scaffold": 8876435.0, "genome_size": 8876435.0, "gc_percentage": 67.96706110054318, "ambiguous_bases": 0.0, "checkm_completeness": 99.53, "checkm_contamination": 3.25, "checkm_strain_heterogeneity": 0.0, "lsu_5s_count": 5.0, "ssu_count": 5.0, "lsu_23s_count": 5.0, "protein_count": 8022.0, "coding_density": 84.46922666588557, "ncbi_genbank_assembly_accession": "GCA_014490055.1", "ncbi_strain_identifiers": "CCTCC M206084", "ncbi_assembly_level": "Complete Genome", "ncbi_assembly_name": "ASM1449005v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN15928325", "ncbi_country": "China: Hunan", "ncbi_date": "2020-09-07", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": "soil", "ncbi_lat_lon": null, "ncbi_molecule_count": 1.0, "ncbi_cds_count": 7905.0, "ncbi_refseq_category": "representative genome", "ncbi_seq_rel_date": "2020/09/07", "ncbi_spanned_gaps": 0.0, "ncbi_species_taxid": 60894.0, "ncbi_ssu_count": 5.0, "ncbi_submitter": "Hunan Normal University", "ncbi_taxid": 60894.0, "ncbi_total_gap_length": 0.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 57.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": null, "gtdbTypeDesignation": "not type material", "gtdbTypeDesignationSources": null, "lpsnTypeDesignation": "not type material", "dsmzTypeDesignation": "not type material", "lpsnPriorityYear": null, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora spinosa", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora spinosa", "gtdb_representative": false, "gtdb_genome_representative": "RS_GCF_000194155.1", "ncbi_type_material_designation": null, "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora", "gtdbSpecies": "s__Saccharopolyspora spinosa", "gtdbTypeDesignation.1": "not type material", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_000194155.1", "speciesClusterCount": 3.0, "lpsnUrl": "https://lpsn.dsmz.de/species/saccharopolyspora-spinosa", "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/60894/\">s__Saccharopolyspora spinosa</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/60894/\">s__Saccharopolyspora spinosa</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__Saccharopolyspora spinosa', 'taxonId': '60894'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 's__Saccharopolyspora spinosa', 'taxonId': '60894'}]", "detail": "Genome found"}, {"genome_id": "GCF_002846475.1", "Min": 9020646, "N25": 9020646, "N50": 9020646, "AuN": 9020646.0, "gc": 0.6794950162105907, "Max": 9020646, "N75": 9020646, "Count": 1, "Total": 9020646, "N90": 9020646, "Avg": 9020646.0, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora", "Species": "spinosa", "Organism": "s__Saccharopolyspora spinosa", "accession": "GCA_002846475.1", "name": "GCF_002846475.1", "trna_aa_count": 19.0, "contig_count": 1.0, "n50_contigs": 9020646.0, "longest_contig": 9020646.0, "scaffold_count": 1.0, "n50_scaffolds": 9020646.0, "longest_scaffold": 9020646.0, "genome_size": 9020646.0, "gc_percentage": 67.94950162105907, "ambiguous_bases": 0.0, "checkm_completeness": 99.53, "checkm_contamination": 3.25, "checkm_strain_heterogeneity": 0.0, "lsu_5s_count": 5.0, "ssu_count": 5.0, "lsu_23s_count": 6.0, "protein_count": 8028.0, "coding_density": 84.79478077290695, "ncbi_genbank_assembly_accession": "GCA_002846475.1", "ncbi_strain_identifiers": "DSM 44228", "ncbi_assembly_level": "Contig", "ncbi_assembly_name": "ASM284647v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN05216473", "ncbi_country": null, "ncbi_date": "2017-12-21", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": 0.0, "ncbi_cds_count": 7902.0, "ncbi_refseq_category": "na", "ncbi_seq_rel_date": "2017/12/21", "ncbi_spanned_gaps": 0.0, "ncbi_species_taxid": 60894.0, "ncbi_ssu_count": 5.0, "ncbi_submitter": "DOE Joint Genome Institute", "ncbi_taxid": 60894.0, "ncbi_total_gap_length": 0.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 56.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": "PJNB00000000.1", "gtdbTypeDesignation": "type strain of species", "gtdbTypeDesignationSources": "LPSN", "lpsnTypeDesignation": "type strain of species", "dsmzTypeDesignation": "type strain of species", "lpsnPriorityYear": 1990.0, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora spinosa", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora spinosa", "gtdb_representative": false, "gtdb_genome_representative": "RS_GCF_000194155.1", "ncbi_type_material_designation": "assembly from type material", "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora", "gtdbSpecies": "s__Saccharopolyspora spinosa", "gtdbTypeDesignation.1": "type strain of species", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_000194155.1", "speciesClusterCount": 3.0, "lpsnUrl": "https://lpsn.dsmz.de/species/saccharopolyspora-spinosa", "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/60894/\">s__Saccharopolyspora spinosa</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/60894/\">s__Saccharopolyspora spinosa</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__Saccharopolyspora spinosa', 'taxonId': '60894'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 's__Saccharopolyspora spinosa', 'taxonId': '60894'}]", "detail": "Genome found"}, {"genome_id": "GCF_000194155.1", "Min": 1081, "N25": 3851573, "N50": 2392754, "AuN": 2522450.856902418, "gc": 0.6805661874795961, "Max": 3851573, "N75": 546156, "Count": 22, "Total": 8581920, "N90": 519670, "Avg": 390087.2727272727, "gtdb_release": "R214", "Domain": "d__Bacteria", "Phylum": "p__Actinomycetota", "Class": "c__Actinomycetia", "Order": "o__Mycobacteriales", "Family": "f__Pseudonocardiaceae", "Genus": "g__Saccharopolyspora", "Species": "spinosa", "Organism": "s__Saccharopolyspora spinosa", "accession": "GCA_000194155.1", "name": "GCF_000194155.1", "trna_aa_count": 19.0, "contig_count": 117.0, "n50_contigs": 163471.0, "longest_contig": 471503.0, "scaffold_count": 22.0, "n50_scaffolds": 2392754.0, "longest_scaffold": 3851573.0, "genome_size": 8581920.0, "gc_percentage": 68.0566187479596, "ambiguous_bases": 8.0, "checkm_completeness": 98.64, "checkm_contamination": 3.0, "checkm_strain_heterogeneity": 7.69, "lsu_5s_count": 2.0, "ssu_count": 1.0, "lsu_23s_count": 1.0, "protein_count": 8230.0, "coding_density": 82.7515870574417, "ncbi_genbank_assembly_accession": "GCA_000194155.1", "ncbi_strain_identifiers": "NRRL 18395", "ncbi_assembly_level": "Scaffold", "ncbi_assembly_name": "ASM19415v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN02470034", "ncbi_country": null, "ncbi_date": "2011-03-29", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": 0.0, "ncbi_cds_count": 8033.0, "ncbi_refseq_category": "na", "ncbi_seq_rel_date": "2011/03/29", "ncbi_spanned_gaps": 96.0, "ncbi_species_taxid": 60894.0, "ncbi_ssu_count": 1.0, "ncbi_submitter": "Microbial Genome Research Center, CASPMI, IM-CAS", "ncbi_taxid": 994479.0, "ncbi_total_gap_length": 54144.0, "ncbi_translation_table": 11.0, "ncbi_trna_count": 56.0, "ncbi_unspanned_gaps": 0.0, "ncbi_version_status": "latest", "ncbi_wgs_master": "AEYC00000000.1", "gtdbTypeDesignation": "type strain of species", "gtdbTypeDesignationSources": "LPSN", "lpsnTypeDesignation": "type strain of species", "dsmzTypeDesignation": "type strain of species", "lpsnPriorityYear": 1990.0, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora spinosa", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Pseudonocardiales;f__Pseudonocardiaceae;g__Saccharopolyspora;s__Saccharopolyspora spinosa;x__Saccharopolyspora spinosa NRRL 18395", "gtdb_representative": true, "gtdb_genome_representative": "RS_GCF_000194155.1", "ncbi_type_material_designation": "assembly from type material", "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinomycetota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Mycobacteriales", "gtdbFamily": "f__Pseudonocardiaceae", "gtdbGenus": "g__Saccharopolyspora", "gtdbSpecies": "s__Saccharopolyspora spinosa", "gtdbTypeDesignation.1": "type strain of species", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_000194155.1", "speciesClusterCount": 3.0, "lpsnUrl": "https://lpsn.dsmz.de/species/saccharopolyspora-spinosa", "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/60894/\">s__Saccharopolyspora spinosa</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2/\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1783272/\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/201174/\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1760/\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/85010/\">o__Pseudonocardiales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/2070/\">f__Pseudonocardiaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/1835/\">g__Saccharopolyspora</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/60894/\">s__Saccharopolyspora spinosa</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/data-hub/taxonomy/994479/\">x__Saccharopolyspora spinosa NRRL 18395</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}", "4": "{'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}", "5": "{'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}", "6": "{'taxon': 's__Saccharopolyspora spinosa', 'taxonId': '60894'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Pseudonocardiales', 'taxonId': '85010'}, {'taxon': 'f__Pseudonocardiaceae', 'taxonId': '2070'}, {'taxon': 'g__Saccharopolyspora', 'taxonId': '1835'}, {'taxon': 's__Saccharopolyspora spinosa', 'taxonId': '60894'}, {'taxon': 'x__Saccharopolyspora spinosa NRRL 18395', 'taxonId': '994479'}]", "detail": "Genome found"}]}}, {"mode": "vega-lite"});
+</script>
+
+<table>
+<thead>
+<tr>
+<th>Axis</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>#Seq</code></td>
+<td>The number of sequences in the input file.</td>
+</tr>
+<tr>
+<td><code>Total bp</code></td>
+<td>The total number of base pairs in all sequences.</td>
+</tr>
+<tr>
+<td><code>Avg</code></td>
+<td>The average length of the sequences in base pairs.</td>
+</tr>
+<tr>
+<td><code>N50</code>, <code>N75</code>, <code>N90</code></td>
+<td>The length of the shortest sequence such that the sum of the lengths of all sequences equal to or greater than it is at least 50%, 75%, or 90% of the total length of all sequences.</td>
+</tr>
+<tr>
+<td><code>auN</code></td>
+<td>area under the Nx curve.</td>
+</tr>
+<tr>
+<td><code>Min</code></td>
+<td>The length of the shortest sequence in base pairs.</td>
+</tr>
+<tr>
+<td><code>Max</code></td>
+<td>The length of the longest sequence in base pairs.</td>
+</tr>
+</tbody>
+</table>
+<p>These statistics can be useful for assessing the quality and characteristics of a set of sequences, such as a genome assembly or a set of reads.</p>
+<p><a class="md-button" href="http://localhost:8002/tables/df_seqfu_stats.csv" target="_blank">Download Table</a></p>
+<h2 id="references">References</h2>
+<p><font size="2"></p>
+<ul>
+<li><em>Telatin, A., Birolo, G., &amp; Fariselli, P. SeqFu [Computer software]. GITHUB: <a href="https://github.com/telatin/seqfu2">https://github.com/telatin/seqfu2</a></em></li>
+</ul>
+<p></font></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/NPGMgroup" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/NBChub/bgcflow" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "toc.integrate"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      
+    
+  </body>
+</html>

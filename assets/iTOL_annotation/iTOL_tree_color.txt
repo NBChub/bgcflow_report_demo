@@ -1,0 +1,6 @@
+TREE_COLORS
+SEPARATOR TAB
+DATA
+N10	range	#E41A1C	g__Saccharopolyspora
+N5	range	#377EB8	g__Saccharopolyspora_D
+N7	range	#4DAF4A	g__Saccharopolyspora_C

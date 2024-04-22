@@ -1,0 +1,1236 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../checkm/">
+      
+      
+        <link rel="next" href="../deeptfactor/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
+    
+    
+      
+        <title>prokka-gbk - BGCFlow Report</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#annotated-genomes" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="BGCFlow Report" class="md-header__button md-logo" aria-label="BGCFlow Report" data-md-component="logo">
+      
+  <img src="../assets/bgcflow/BGCFlow_logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BGCFlow Report
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              prokka-gbk
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../seqfu/" class="md-tabs__link">
+          
+  
+  QC and Data Selection
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Functional Annotation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../antismash/" class="md-tabs__link">
+          
+  
+  Genome Mining
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../automlst-wrapper/" class="md-tabs__link">
+          
+  
+  Phylogenomic Placement
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../roary/" class="md-tabs__link">
+          
+  
+  Comparative Genomics
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="BGCFlow Report" class="md-nav__button md-logo" aria-label="BGCFlow Report" data-md-component="logo">
+      
+  <img src="../assets/bgcflow/BGCFlow_logo.svg" alt="logo">
+
+    </a>
+    BGCFlow Report
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    QC and Data Selection
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            QC and Data Selection
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seqfu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    seqfu
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    mash
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fastani/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    fastani
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checkm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    checkm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Functional Annotation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Functional Annotation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    prokka-gbk
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    prokka-gbk
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Statistics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deeptfactor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    deeptfactor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Genome Mining
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Genome Mining
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../antismash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    antismash
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../query-bigslice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    query-bigslice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bigscape/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    bigscape
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bigslice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    bigslice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    arts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cblaster-genome/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    cblaster-genome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cblaster-bgc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    cblaster-bgc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gecco/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    gecco
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Phylogenomic Placement
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Phylogenomic Placement
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automlst-wrapper/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    automlst-wrapper
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Comparative Genomics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Comparative Genomics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    roary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eggnog-roary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    eggnog-roary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+
+
+
+                  
+
+
+<h1 id="annotated-genomes">Annotated genomes</h1>
+<p>List of annotated genomes from: <code>[mq_saccharopolyspora]</code> </p>
+<h2 id="description">Description</h2>
+<p>Summary table of annotated genbank files from each genomes.</p>
+<div class="itables">
+<style>
+.itables table td { font-style: italic; font-size: .8em;}
+.itables table th { font-style: oblique; font-size: .8em; }
+</style>
+<table id="itables_dfb4cc5d_63de_4402_a28d_afbd07b2c402" class="display compact" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom">
+<thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>contigs</th>
+      <th>bases</th>
+      <th>CDS</th>
+      <th>rRNA</th>
+      <th>repeat_region</th>
+      <th>tRNA</th>
+      <th>tmRNA</th>
+      <th>gbk file</th>
+      <th>CDS table</th>
+    </tr>
+  </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody>
+
+</table>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+<script type="module">
+    // Import jquery and DataTable
+    import 'https://code.jquery.com/jquery-3.6.0.min.js';
+    import dt from 'https://cdn.datatables.net/1.12.1/js/jquery.dataTables.mjs';
+    dt($);
+
+    $(document).ready(function () {
+        document.querySelectorAll("#itables_dfb4cc5d_63de_4402_a28d_afbd07b2c402:not(.dataTable)").forEach(table => {
+            // Define the table data
+            const data = [["GCF_000062885.1", 1, 8212805, 7279, 12, 3.0, 71, 1, "<a href='http://localhost:8002/genbank/GCF_000062885.1.gbk' target='_blank''>GCF_000062885.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_000062885.1.tsv' target='_blank''>GCF_000062885.1.tsv</a>"], ["GCF_000194155.1", 22, 8581920, 8215, 4, 2.0, 61, 1, "<a href='http://localhost:8002/genbank/GCF_000194155.1.gbk' target='_blank''>GCF_000194155.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_000194155.1.tsv' target='_blank''>GCF_000194155.1.tsv</a>"], ["GCF_002564065.1", 1, 8230103, 7307, 12, 3.0, 71, 1, "<a href='http://localhost:8002/genbank/GCF_002564065.1.gbk' target='_blank''>GCF_002564065.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_002564065.1.tsv' target='_blank''>GCF_002564065.1.tsv</a>"], ["GCF_002846475.1", 1, 9020646, 8026, 16, 2.0, 61, 1, "<a href='http://localhost:8002/genbank/GCF_002846475.1.gbk' target='_blank''>GCF_002846475.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_002846475.1.tsv' target='_blank''>GCF_002846475.1.tsv</a>"], ["GCF_003635025.1", 2, 8266186, 7657, 16, NaN, 68, 1, "<a href='http://localhost:8002/genbank/GCF_003635025.1.gbk' target='_blank''>GCF_003635025.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_003635025.1.tsv' target='_blank''>GCF_003635025.1.tsv</a>"], ["GCF_003931915.1", 35, 5824618, 5344, 3, 1.0, 56, 1, "<a href='http://localhost:8002/genbank/GCF_003931915.1.gbk' target='_blank''>GCF_003931915.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_003931915.1.tsv' target='_blank''>GCF_003931915.1.tsv</a>"], ["GCF_007829955.1", 8, 6410624, 5780, 12, NaN, 60, 1, "<a href='http://localhost:8002/genbank/GCF_007829955.1.gbk' target='_blank''>GCF_007829955.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_007829955.1.tsv' target='_blank''>GCF_007829955.1.tsv</a>"], ["GCF_008630535.1", 46, 7549392, 6807, 8, 2.0, 69, 1, "<a href='http://localhost:8002/genbank/GCF_008630535.1.gbk' target='_blank''>GCF_008630535.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_008630535.1.tsv' target='_blank''>GCF_008630535.1.tsv</a>"], ["GCF_012277335.1", 1, 8045912, 7501, 15, NaN, 60, 1, "<a href='http://localhost:8002/genbank/GCF_012277335.1.gbk' target='_blank''>GCF_012277335.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_012277335.1.tsv' target='_blank''>GCF_012277335.1.tsv</a>"], ["GCF_013410345.1", 1, 5783988, 5266, 15, 3.0, 68, 1, "<a href='http://localhost:8002/genbank/GCF_013410345.1.gbk' target='_blank''>GCF_013410345.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_013410345.1.tsv' target='_blank''>GCF_013410345.1.tsv</a>"], ["GCF_014203325.1", 1, 6825909, 5928, 12, 4.0, 70, 1, "<a href='http://localhost:8002/genbank/GCF_014203325.1.gbk' target='_blank''>GCF_014203325.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_014203325.1.tsv' target='_blank''>GCF_014203325.1.tsv</a>"], ["GCF_014203395.1", 6, 8541735, 7467, 12, 3.0, 61, 1, "<a href='http://localhost:8002/genbank/GCF_014203395.1.gbk' target='_blank''>GCF_014203395.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_014203395.1.tsv' target='_blank''>GCF_014203395.1.tsv</a>"], ["GCF_014490055.1", 1, 8876435, 8026, 15, 2.0, 62, 1, "<a href='http://localhost:8002/genbank/GCF_014490055.1.gbk' target='_blank''>GCF_014490055.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_014490055.1.tsv' target='_blank''>GCF_014490055.1.tsv</a>"], ["GCF_014697215.1", 3, 9608180, 9215, 15, 1.0, 59, 1, "<a href='http://localhost:8002/genbank/GCF_014697215.1.gbk' target='_blank''>GCF_014697215.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_014697215.1.tsv' target='_blank''>GCF_014697215.1.tsv</a>"], ["GCF_016526145.1", 34, 6397171, 5807, 5, 3.0, 57, 1, "<a href='http://localhost:8002/genbank/GCF_016526145.1.gbk' target='_blank''>GCF_016526145.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_016526145.1.tsv' target='_blank''>GCF_016526145.1.tsv</a>"], ["GCF_016859185.1", 1, 8305652, 7407, 12, 3.0, 70, 1, "<a href='http://localhost:8002/genbank/GCF_016859185.1.gbk' target='_blank''>GCF_016859185.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_016859185.1.tsv' target='_blank''>GCF_016859185.1.tsv</a>"], ["GCF_018070075.1", 34, 7167017, 6628, 6, 7.0, 63, 1, "<a href='http://localhost:8002/genbank/GCF_018070075.1.gbk' target='_blank''>GCF_018070075.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_018070075.1.tsv' target='_blank''>GCF_018070075.1.tsv</a>"], ["GCF_018141105.1", 1, 8243897, 7432, 12, 1.0, 58, 1, "<a href='http://localhost:8002/genbank/GCF_018141105.1.gbk' target='_blank''>GCF_018141105.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_018141105.1.tsv' target='_blank''>GCF_018141105.1.tsv</a>"], ["GCF_022392385.1", 2, 8181083, 7263, 5, 3.0, 70, 1, "<a href='http://localhost:8002/genbank/GCF_022392385.1.gbk' target='_blank''>GCF_022392385.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_022392385.1.tsv' target='_blank''>GCF_022392385.1.tsv</a>"], ["GCF_022828475.1", 1, 6878695, 6056, 12, 5.0, 67, 1, "<a href='http://localhost:8002/genbank/GCF_022828475.1.gbk' target='_blank''>GCF_022828475.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_022828475.1.tsv' target='_blank''>GCF_022828475.1.tsv</a>"], ["GCF_024734405.1", 1, 6344421, 5540, 12, 4.0, 69, 1, "<a href='http://localhost:8002/genbank/GCF_024734405.1.gbk' target='_blank''>GCF_024734405.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_024734405.1.tsv' target='_blank''>GCF_024734405.1.tsv</a>"], ["GCF_025643595.1", 1, 6562638, 6032, 12, 3.0, 66, 1, "<a href='http://localhost:8002/genbank/GCF_025643595.1.gbk' target='_blank''>GCF_025643595.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_025643595.1.tsv' target='_blank''>GCF_025643595.1.tsv</a>"], ["GCF_900108315.1", 27, 7744048, 7169, 7, 1.0, 66, 1, "<a href='http://localhost:8002/genbank/GCF_900108315.1.gbk' target='_blank''>GCF_900108315.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_900108315.1.tsv' target='_blank''>GCF_900108315.1.tsv</a>"], ["GCF_900112555.1", 28, 7777251, 7245, 6, 1.0, 66, 1, "<a href='http://localhost:8002/genbank/GCF_900112555.1.gbk' target='_blank''>GCF_900112555.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_900112555.1.tsv' target='_blank''>GCF_900112555.1.tsv</a>"], ["GCF_900114905.1", 43, 8219321, 7645, 7, NaN, 68, 1, "<a href='http://localhost:8002/genbank/GCF_900114905.1.gbk' target='_blank''>GCF_900114905.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_900114905.1.tsv' target='_blank''>GCF_900114905.1.tsv</a>"], ["GCF_900116135.1", 22, 6291299, 5626, 5, 5.0, 65, 1, "<a href='http://localhost:8002/genbank/GCF_900116135.1.gbk' target='_blank''>GCF_900116135.1.gbk</a>", "<a href='http://localhost:8002/genbank/GCF_900116135.1.tsv' target='_blank''>GCF_900116135.1.tsv</a>"]];
+
+            // Define the dt_args
+            let dt_args = {"columnDefs": [{"className": "dt-center", "targets": "_all"}], "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
+            dt_args["data"] = data;
+
+
+            new $.fn.dataTable(table, dt_args);
+        });
+    });
+</script>
+</div>
+
+<h2 id="summary-statistics">Summary Statistics</h2>
+<style>
+  #altair-viz-5dff9b32a267425baadab359b000eb0e.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-5dff9b32a267425baadab359b000eb0e.vega-embed details,
+  #altair-viz-5dff9b32a267425baadab359b000eb0e.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-5dff9b32a267425baadab359b000eb0e"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-5dff9b32a267425baadab359b000eb0e") {
+      outputDiv = document.getElementById("altair-viz-5dff9b32a267425baadab359b000eb0e");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.16.3?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.16.3"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "hconcat": [{"mark": {"type": "boxplot", "median": {"color": "black"}, "size": 50}, "encoding": {"color": {"value": "#66c2a5"}, "opacity": {"value": 0.7}, "x": {"axis": null, "field": "dataset", "type": "nominal"}, "y": {"field": "contigs", "scale": {"domain": [-3.5, 50.5]}, "title": null, "type": "quantitative"}}, "height": 150, "title": "contigs", "width": 100}, {"mark": {"type": "boxplot", "median": {"color": "black"}, "size": 50}, "encoding": {"color": {"value": "#fc8d62"}, "opacity": {"value": 0.7}, "x": {"axis": null, "field": "dataset", "type": "nominal"}, "y": {"field": "bases", "scale": {"domain": [5401568.8, 9990599.2]}, "title": null, "type": "quantitative"}}, "height": 150, "title": "bases", "width": 100}, {"mark": {"type": "boxplot", "median": {"color": "black"}, "size": 50}, "encoding": {"color": {"value": "#8da0cb"}, "opacity": {"value": 0.7}, "x": {"axis": null, "field": "dataset", "type": "nominal"}, "y": {"field": "CDS", "scale": {"domain": [4871.1, 9609.9]}, "title": null, "type": "quantitative"}}, "height": 150, "title": "CDS", "width": 100}, {"mark": {"type": "boxplot", "median": {"color": "black"}, "size": 50}, "encoding": {"color": {"value": "#e78ac3"}, "opacity": {"value": 0.7}, "x": {"axis": null, "field": "dataset", "type": "nominal"}, "y": {"field": "rRNA", "scale": {"domain": [1.7, 17.3]}, "title": null, "type": "quantitative"}}, "height": 150, "title": "rRNA", "width": 100}, {"mark": {"type": "boxplot", "median": {"color": "black"}, "size": 50}, "encoding": {"color": {"value": "#a6d854"}, "opacity": {"value": 0.7}, "x": {"axis": null, "field": "dataset", "type": "nominal"}, "y": {"field": "repeat_region", "scale": {"domain": [0.3999999999999999, 7.6]}, "title": null, "type": "quantitative"}}, "height": 150, "title": "repeat_region", "width": 100}, {"mark": {"type": "boxplot", "median": {"color": "black"}, "size": 50}, "encoding": {"color": {"value": "#ffd92f"}, "opacity": {"value": 0.7}, "x": {"axis": null, "field": "dataset", "type": "nominal"}, "y": {"field": "tRNA", "scale": {"domain": [54.5, 72.5]}, "title": null, "type": "quantitative"}}, "height": 150, "title": "tRNA", "width": 100}, {"mark": {"type": "boxplot", "median": {"color": "black"}, "size": 50}, "encoding": {"color": {"value": "#e5c494"}, "opacity": {"value": 0.7}, "x": {"axis": null, "field": "dataset", "type": "nominal"}, "y": {"field": "tmRNA", "scale": {"domain": [1.0, 1.0]}, "title": null, "type": "quantitative"}}, "height": 150, "title": "tmRNA", "width": 100}], "data": {"name": "data-47db1bf7df20faa2260bff4800cabf33"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json", "datasets": {"data-47db1bf7df20faa2260bff4800cabf33": [{"contigs": 1, "bases": 8212805, "CDS": 7279, "rRNA": 12, "repeat_region": 3.0, "tRNA": 71, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_000062885.1.gbk' target='_blank''>GCF_000062885.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_000062885.1.tsv' target='_blank''>GCF_000062885.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 22, "bases": 8581920, "CDS": 8215, "rRNA": 4, "repeat_region": 2.0, "tRNA": 61, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_000194155.1.gbk' target='_blank''>GCF_000194155.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_000194155.1.tsv' target='_blank''>GCF_000194155.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 1, "bases": 8230103, "CDS": 7307, "rRNA": 12, "repeat_region": 3.0, "tRNA": 71, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_002564065.1.gbk' target='_blank''>GCF_002564065.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_002564065.1.tsv' target='_blank''>GCF_002564065.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 1, "bases": 9020646, "CDS": 8026, "rRNA": 16, "repeat_region": 2.0, "tRNA": 61, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_002846475.1.gbk' target='_blank''>GCF_002846475.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_002846475.1.tsv' target='_blank''>GCF_002846475.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 2, "bases": 8266186, "CDS": 7657, "rRNA": 16, "repeat_region": null, "tRNA": 68, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_003635025.1.gbk' target='_blank''>GCF_003635025.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_003635025.1.tsv' target='_blank''>GCF_003635025.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 35, "bases": 5824618, "CDS": 5344, "rRNA": 3, "repeat_region": 1.0, "tRNA": 56, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_003931915.1.gbk' target='_blank''>GCF_003931915.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_003931915.1.tsv' target='_blank''>GCF_003931915.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 8, "bases": 6410624, "CDS": 5780, "rRNA": 12, "repeat_region": null, "tRNA": 60, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_007829955.1.gbk' target='_blank''>GCF_007829955.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_007829955.1.tsv' target='_blank''>GCF_007829955.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 46, "bases": 7549392, "CDS": 6807, "rRNA": 8, "repeat_region": 2.0, "tRNA": 69, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_008630535.1.gbk' target='_blank''>GCF_008630535.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_008630535.1.tsv' target='_blank''>GCF_008630535.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 1, "bases": 8045912, "CDS": 7501, "rRNA": 15, "repeat_region": null, "tRNA": 60, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_012277335.1.gbk' target='_blank''>GCF_012277335.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_012277335.1.tsv' target='_blank''>GCF_012277335.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 1, "bases": 5783988, "CDS": 5266, "rRNA": 15, "repeat_region": 3.0, "tRNA": 68, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_013410345.1.gbk' target='_blank''>GCF_013410345.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_013410345.1.tsv' target='_blank''>GCF_013410345.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 1, "bases": 6825909, "CDS": 5928, "rRNA": 12, "repeat_region": 4.0, "tRNA": 70, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_014203325.1.gbk' target='_blank''>GCF_014203325.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_014203325.1.tsv' target='_blank''>GCF_014203325.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 6, "bases": 8541735, "CDS": 7467, "rRNA": 12, "repeat_region": 3.0, "tRNA": 61, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_014203395.1.gbk' target='_blank''>GCF_014203395.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_014203395.1.tsv' target='_blank''>GCF_014203395.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 1, "bases": 8876435, "CDS": 8026, "rRNA": 15, "repeat_region": 2.0, "tRNA": 62, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_014490055.1.gbk' target='_blank''>GCF_014490055.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_014490055.1.tsv' target='_blank''>GCF_014490055.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 3, "bases": 9608180, "CDS": 9215, "rRNA": 15, "repeat_region": 1.0, "tRNA": 59, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_014697215.1.gbk' target='_blank''>GCF_014697215.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_014697215.1.tsv' target='_blank''>GCF_014697215.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 34, "bases": 6397171, "CDS": 5807, "rRNA": 5, "repeat_region": 3.0, "tRNA": 57, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_016526145.1.gbk' target='_blank''>GCF_016526145.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_016526145.1.tsv' target='_blank''>GCF_016526145.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 1, "bases": 8305652, "CDS": 7407, "rRNA": 12, "repeat_region": 3.0, "tRNA": 70, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_016859185.1.gbk' target='_blank''>GCF_016859185.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_016859185.1.tsv' target='_blank''>GCF_016859185.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 34, "bases": 7167017, "CDS": 6628, "rRNA": 6, "repeat_region": 7.0, "tRNA": 63, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_018070075.1.gbk' target='_blank''>GCF_018070075.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_018070075.1.tsv' target='_blank''>GCF_018070075.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 1, "bases": 8243897, "CDS": 7432, "rRNA": 12, "repeat_region": 1.0, "tRNA": 58, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_018141105.1.gbk' target='_blank''>GCF_018141105.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_018141105.1.tsv' target='_blank''>GCF_018141105.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 2, "bases": 8181083, "CDS": 7263, "rRNA": 5, "repeat_region": 3.0, "tRNA": 70, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_022392385.1.gbk' target='_blank''>GCF_022392385.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_022392385.1.tsv' target='_blank''>GCF_022392385.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 1, "bases": 6878695, "CDS": 6056, "rRNA": 12, "repeat_region": 5.0, "tRNA": 67, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_022828475.1.gbk' target='_blank''>GCF_022828475.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_022828475.1.tsv' target='_blank''>GCF_022828475.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 1, "bases": 6344421, "CDS": 5540, "rRNA": 12, "repeat_region": 4.0, "tRNA": 69, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_024734405.1.gbk' target='_blank''>GCF_024734405.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_024734405.1.tsv' target='_blank''>GCF_024734405.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 1, "bases": 6562638, "CDS": 6032, "rRNA": 12, "repeat_region": 3.0, "tRNA": 66, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_025643595.1.gbk' target='_blank''>GCF_025643595.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_025643595.1.tsv' target='_blank''>GCF_025643595.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 27, "bases": 7744048, "CDS": 7169, "rRNA": 7, "repeat_region": 1.0, "tRNA": 66, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_900108315.1.gbk' target='_blank''>GCF_900108315.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_900108315.1.tsv' target='_blank''>GCF_900108315.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 28, "bases": 7777251, "CDS": 7245, "rRNA": 6, "repeat_region": 1.0, "tRNA": 66, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_900112555.1.gbk' target='_blank''>GCF_900112555.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_900112555.1.tsv' target='_blank''>GCF_900112555.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 43, "bases": 8219321, "CDS": 7645, "rRNA": 7, "repeat_region": null, "tRNA": 68, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_900114905.1.gbk' target='_blank''>GCF_900114905.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_900114905.1.tsv' target='_blank''>GCF_900114905.1.tsv</a>", "dataset": "mq_saccharopolyspora"}, {"contigs": 22, "bases": 6291299, "CDS": 5626, "rRNA": 5, "repeat_region": 5.0, "tRNA": 65, "tmRNA": 1, "gbk file": "<a href='http://localhost:8002/genbank/GCF_900116135.1.gbk' target='_blank''>GCF_900116135.1.gbk</a>", "CDS table": "<a href='http://localhost:8002/genbank/GCF_900116135.1.tsv' target='_blank''>GCF_900116135.1.tsv</a>", "dataset": "mq_saccharopolyspora"}]}}, {"mode": "vega-lite"});
+</script>
+
+<h2 id="references">References</h2>
+<p><font size="2"></p>
+<ul>
+<li><em>Seemann T. Prokka: rapid prokaryotic genome annotation. <a href="https://academic.oup.com/bioinformatics/article/30/14/2068/2390517?login=false">Bioinformatics 2014 Jul 15;30(14):2068-9. PMID:24642063</a></em></li>
+</ul>
+<p></font></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/NPGMgroup" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/NBChub/bgcflow" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "toc.integrate"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      
+    
+  </body>
+</html>
